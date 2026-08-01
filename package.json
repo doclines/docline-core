@@ -41,11 +41,19 @@
   "author": "chinna NJ",
   "license": "MIT",
   "dependencies": {
+    "@mdx-js/mdx": "^3.1.1",
     "dompurify": "^3.4.11",
+    "fuse.js": "^7.5.0",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.11.1",
+    "jsdom": "^29.1.1",
     "marked": "^18.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.2"
+    "react-router-dom": "^7.18.2",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "turndown": "^7.2.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.20",
