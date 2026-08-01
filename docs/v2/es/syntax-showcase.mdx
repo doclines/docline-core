@@ -1,0 +1,48 @@
+---
+title: Demo de Sintaxis
+description: Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo.
+---
+
+## JSON
+
+```json
+{
+  "version": "v2",
+  "locale": "es",
+  "status": "ok"
+}
+```
+
+## JavaScript
+
+```js
+const formatPath = (slug) => `/${slug}`;
+console.log(formatPath('components'));
+```
+
+## Ruby
+
+```rb
+class HealthCheck
+  def status
+    :ok
+  end
+end
+```
+
+## PHP
+
+```php
+<?php
+function ping(): string {
+  return 'ok';
+}
+```
+
+## INI
+
+```ini
+[docline]
+mode=production
+cache=true
+```

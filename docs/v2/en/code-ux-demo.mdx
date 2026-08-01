@@ -1,0 +1,66 @@
+---
+title: Code UX Demo
+description: v2 code experience demo with tabs, groups, and mixed language samples.
+---
+
+## Infrastructure Snippets
+
+<Tabs>
+  <Tab title="Terraform">
+
+```hcl
+resource "aws_sqs_queue" "events" {
+  name                      = "docline-events"
+  message_retention_seconds = 345600
+}
+```
+
+  </Tab>
+  <Tab title="Pulumi TS">
+
+```ts
+import * as aws from '@pulumi/aws';
+
+const queue = new aws.sqs.Queue('docline-events', {
+  messageRetentionSeconds: 345600,
+});
+```
+
+  </Tab>
+</Tabs>
+
+## Runtime Config
+
+<CodeGroup>
+```ini app.ini
+[service]
+name=docline
+region=us-east-1
+```
+
+```toml app.toml
+[service]
+name = "docline"
+region = "us-east-1"
+```
+
+```yaml app.yaml
+service:
+  name: docline
+  region: us-east-1
+```
+</CodeGroup>
+
+## Backend Examples
+
+```go
+func canPublish(role string) bool {
+    return role == "owner" || role == "editor"
+}
+```
+
+```rust
+fn can_publish(role: &str) -> bool {
+    role == "owner" || role == "editor"
+}
+```

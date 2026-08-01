@@ -1,0 +1,398 @@
+{
+  "$schema": "./docs.schema.json",
+  "template": "docline",
+  "templateVersion": "2.0.0",
+  "name": "docline",
+  "description": "Config-driven static docs platform",
+  "favicon": "/favicon.png",
+  "branding": {
+    "title": "docline",
+    "subtitle": "Versioned docs made simple",
+    "homePath": "/introduction",
+    "logo": {
+      "src": "/opensourcedocs-logo.svg",
+      "alt": "docline",
+      "variant": "icon",
+      "showText": true
+    },
+    "badge": {
+      "enabled": true,
+      "label": "Powered by docline",
+      "href": "https://github.com/doclines/docline-core",
+      "target": "_blank",
+      "position": "bottom-right"
+    }
+  },
+  "ui": {
+    "header": {
+      "searchPlaceholder": "Search docs",
+      "quickSearchLabel": "Quick Search",
+      "themeGalleryLabel": "Theme Gallery",
+      "actions": {
+        "order": ["search", "theme", "template", "view", "themeGallery"],
+        "hidden": ["platform"]
+      }
+    },
+    "sidebar": {
+      "searchLabel": "Search docs",
+      "statusLabel": "Static content generated",
+      "repoLabel": "Product Features",
+      "themeGalleryLabel": "Theme Gallery",
+      "actions": {
+        "order": ["search", "status", "repo", "themeGallery"],
+        "hidden": ["status", "repo", "platform"],
+        "hiddenDesktop": [],
+        "hiddenMobile": ["platform"]
+      }
+    },
+    "search": {
+      "placeholder": "Search documentation...",
+      "noResultsPrefix": "No results found for"
+    },
+    "theme": {
+      "buttonLabel": "Theme",
+      "panelTitle": "Themes",
+      "panelDescription": "Click to apply across the page"
+    },
+    "view": {
+      "buttonLabel": "View",
+      "densityTitle": "Density",
+      "comfortableLabel": "Comfortable",
+      "compactLabel": "Compact",
+      "readingTitle": "Reading focus",
+      "readingOnLabel": "On: minimal distractions",
+      "readingOffLabel": "Off: full docs layout",
+      "performanceTitle": "Performance",
+      "performanceOnLabel": "Reduce effects for speed",
+      "performanceOffLabel": "Full visual effects"
+    },
+    "layout": {
+      "buttonLabel": "Template",
+      "panelTitle": "Layout Templates",
+      "panelDescription": "Switch shell composition"
+    },
+    "dock": {
+      "enabled": true,
+      "position": "bottom"
+    }
+  },
+  "content": {
+    "roots": ["docs"]
+  },
+  "contentMatrix": {
+    "defaultVersion": "v1",
+    "defaultLocale": "en",
+    "versions": [
+      { "id": "v1", "label": "v1" },
+      { "id": "v2", "label": "v2" }
+    ],
+    "locales": [
+      { "id": "en", "label": "English" },
+      { "id": "es", "label": "Español" }
+    ],
+    "entries": [
+      {
+        "version": "v1",
+        "locale": "en",
+        "roots": ["docs/v1/en"],
+        "navigation": {
+          "tabs": [
+            {
+              "tab": "Guides",
+              "groups": [
+                {
+                  "group": "Getting Started",
+                  "pages": ["introduction", "quickstart", "components", "syntax-showcase", "code-ux-demo", "advanced-highlight-demo"]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "version": "v1",
+        "locale": "es",
+        "roots": ["docs/v1/es"],
+        "navigation": {
+          "tabs": [
+            {
+              "tab": "Guias",
+              "groups": [
+                {
+                  "group": "Comenzar",
+                  "pages": ["introduction", "quickstart", "components", "syntax-showcase", "code-ux-demo", "advanced-highlight-demo"]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "version": "v2",
+        "locale": "en",
+        "roots": ["docs/v2/en"],
+        "navigation": {
+          "tabs": [
+            {
+              "tab": "Guides",
+              "groups": [
+                {
+                  "group": "What is new",
+                  "pages": ["introduction", "quickstart", "components", "syntax-showcase", "code-ux-demo", "advanced-highlight-demo"]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "version": "v2",
+        "locale": "es",
+        "roots": ["docs/v2/es"],
+        "navigation": {
+          "tabs": [
+            {
+              "tab": "Guias",
+              "groups": [
+                {
+                  "group": "Novedades",
+                  "pages": ["introduction", "quickstart", "components", "syntax-showcase", "code-ux-demo", "advanced-highlight-demo"]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "navigation": {
+    "tabs": []
+  },
+  "themes": [
+    {
+      "id": "ayu-light",
+      "label": "Ayu Light",
+      "mode": "light",
+      "tokens": {
+        "--data-viz-1": "#1d4ed8",
+        "--data-viz-2": "#0f766e",
+        "--action-danger": "#dc2626"
+      }
+    },
+    { "id": "catppuccin-latte", "label": "Catppuccin Latte", "mode": "light" },
+    { "id": "github-light", "label": "GitHub Light", "mode": "light" },
+    { "id": "solarized-light", "label": "Solarized Light", "mode": "light" },
+    { "id": "tokyo-night-storm", "label": "Tokyo Night Storm", "mode": "dark" },
+    { "id": "dracula-pro", "label": "Dracula", "mode": "dark" },
+    { "id": "one-dark-pro", "label": "One Dark Pro", "mode": "dark" },
+    { "id": "night-owl", "label": "Night Owl", "mode": "dark" },
+    { "id": "solarized-dark", "label": "Solarized Dark", "mode": "dark" },
+    { "id": "material-ocean", "label": "Material Ocean", "mode": "dark" },
+    { "id": "catppuccin-mocha", "label": "Catppuccin Mocha", "mode": "dark" },
+    { "id": "gruvbox-dark", "label": "Gruvbox Dark", "mode": "dark" },
+    { "id": "nord-dark", "label": "Nord Dark", "mode": "dark" }
+  ],
+  "layoutTemplates": [
+    {
+      "id": "atlas",
+      "label": "Atlas",
+      "description": "Balanced docs shell",
+      "layout": {
+        "showTopNav": true,
+        "showSidebar": true,
+        "showToc": true,
+        "sidebarWidth": 300,
+        "contentMaxWidth": 0,
+        "headerStyle": "default",
+        "sidebarStyle": "default",
+        "tocStyle": "default",
+        "contentStyle": "default",
+        "recipe": {
+          "headerDensity": "normal",
+          "sidebarVisual": "default",
+          "cardRadius": "md",
+          "shadowLevel": "normal",
+          "spacingScale": "normal",
+          "contentWidth": "normal"
+        }
+      }
+    },
+    {
+      "id": "ops-console",
+      "label": "Ops Console",
+      "description": "Compact monitor stack",
+      "layout": {
+        "showTopNav": true,
+        "showSidebar": true,
+        "showToc": true,
+        "sidebarWidth": 280,
+        "contentMaxWidth": 1320,
+        "headerStyle": "compact",
+        "sidebarStyle": "dense",
+        "tocStyle": "card",
+        "contentStyle": "framed",
+        "recipe": {
+          "headerDensity": "compact",
+          "sidebarVisual": "strong",
+          "cardRadius": "sm",
+          "shadowLevel": "deep",
+          "spacingScale": "compact",
+          "contentWidth": "wide"
+        }
+      }
+    }
+  ],
+  "sectionLayoutOverrides": [
+    {
+      "section": "Getting Started",
+      "layout": {
+        "contentStyle": "default",
+        "recipe": {
+          "contentWidth": "normal",
+          "spacingScale": "normal"
+        }
+      }
+    },
+    {
+      "section": "Comenzar",
+      "layout": {
+        "contentStyle": "default",
+        "recipe": {
+          "contentWidth": "normal",
+          "spacingScale": "normal"
+        }
+      }
+    },
+    {
+      "section": "What is new",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide",
+          "spacingScale": "normal"
+        }
+      }
+    },
+    {
+      "section": "Novedades",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide",
+          "spacingScale": "normal"
+        }
+      }
+    },
+    {
+      "pathPrefix": "quickstart",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide"
+        }
+      }
+    },
+    {
+      "pathPrefix": "components",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide"
+        }
+      }
+    },
+    {
+      "pathPrefix": "code-ux-demo",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide"
+        }
+      }
+    },
+    {
+      "pathPrefix": "syntax-showcase",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide"
+        }
+      }
+    },
+    {
+      "pathPrefix": "advanced-highlight-demo",
+      "layout": {
+        "contentStyle": "wide",
+        "recipe": {
+          "contentWidth": "wide"
+        }
+      }
+    }
+  ],
+  "snippets": {
+    "api.authHeader": "Authorization: Bearer <token>",
+    "api.baseUrl.v1": "https://api.example.com/v1"
+  },
+  "pageBlocks": {
+    "global": {
+      "introduction": [
+        {
+          "type": "hero",
+          "position": "beforeContent",
+          "kicker": "Config-first docs",
+          "title": "Build branded documentation fast",
+          "description": "Templates, themes, and page experiences are controlled in docs.json."
+        },
+        {
+          "type": "cta-card",
+          "position": "afterContent",
+          "title": "Need API examples next?",
+          "description": "Jump to quickstart for executable patterns and snippets.",
+          "label": "Open quickstart",
+          "href": "/quickstart"
+        }
+      ]
+    },
+    "v2:en": {
+      "quickstart": [
+        {
+          "type": "api-base-url",
+          "position": "beforeContent",
+          "title": "Base URL",
+          "url": "https://api.example.com/v2"
+        },
+        {
+          "type": "changelog",
+          "position": "afterContent",
+          "title": "Recent release notes",
+          "items": [
+            { "version": "v2.1", "note": "Added pagination defaults." },
+            { "version": "v2.0", "note": "Introduced code tabs and section-level templates." }
+          ]
+        }
+      ]
+    }
+  },
+  "releases": {
+    "breakingChanges": [
+      {
+        "version": "v2",
+        "items": [
+          "Authentication endpoint moved from /auth/token to /oauth/token.",
+          "Legacy field ticket.priority_level was removed; use ticket.priority."
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "primary": {
+      "label": "Platform",
+      "href": "#"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/doclines/docline-core"
+    }
+  }
+}

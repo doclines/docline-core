@@ -1,0 +1,51 @@
+---
+title: Demo Avanzado de Resaltado
+description: Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes.
+---
+
+## PHP
+
+```php
+<?php
+final class HealthController {
+  public function ping(): array {
+    return ['ok' => true, 'ts' => time()];
+  }
+}
+```
+
+## Ruby
+
+```rb
+class Release
+  attr_reader :version, :stable
+
+  def initialize(version:, stable: true)
+    @version = version
+    @stable = stable
+  end
+end
+```
+
+## YAML
+
+```yaml
+pipeline:
+  name: docline-release
+  steps:
+    - run: npm ci
+    - run: npm run build
+    - run: npm run export
+```
+
+## JSON
+
+```json
+{
+  "release": {
+    "version": "2.1.0",
+    "stable": true,
+    "channels": ["web", "cdn"]
+  }
+}
+```

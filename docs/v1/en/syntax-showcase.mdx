@@ -1,0 +1,123 @@
+---
+title: Syntax Showcase
+description: Dummy page to preview multi-language syntax highlighting in docline.
+---
+
+## API JSON
+
+```json
+{
+  "id": "usr_1024",
+  "email": "user@example.com",
+  "roles": ["admin", "editor"],
+  "active": true
+}
+```
+
+## TypeScript
+
+```ts
+export type User = {
+  id: string;
+  email: string;
+  roles: string[];
+  active: boolean;
+};
+
+export function canEdit(user: User): boolean {
+  return user.active && user.roles.includes('editor');
+}
+```
+
+## Python
+
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Job:
+    id: str
+    retries: int = 0
+
+
+def run(job: Job) -> str:
+    return f"running {job.id} (retries={job.retries})"
+```
+
+## Bash
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+export API_BASE_URL="https://api.example.com"
+curl -s "$API_BASE_URL/health" | jq .
+```
+
+## Go
+
+```go
+package main
+
+import "fmt"
+
+type Config struct {
+    Port int
+}
+
+func main() {
+    cfg := Config{Port: 8080}
+    fmt.Printf("listening on :%d\n", cfg.Port)
+}
+```
+
+## Java
+
+```java
+public class HealthService {
+  public String ping() {
+    return "ok";
+  }
+}
+```
+
+## Rust
+
+```rust
+fn main() {
+    let env = "prod";
+    println!("service started in {}", env);
+}
+```
+
+## SQL
+
+```sql
+SELECT id, email, created_at
+FROM users
+WHERE active = true
+ORDER BY created_at DESC
+LIMIT 20;
+```
+
+## YAML
+
+```yaml
+service:
+  name: docs-api
+  replicas: 2
+  resources:
+    cpu: "250m"
+    memory: "512Mi"
+```
+
+## Dockerfile
+
+```dockerfile
+FROM node:22-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --omit=dev
+COPY . .
+CMD ["node", "server.js"]
+```

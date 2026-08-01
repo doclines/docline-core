@@ -1,0 +1,71 @@
+---
+title: Advanced Highlight Demo
+description: v2 syntax stress page for larger snippets and edge grammars.
+---
+
+## TypeScript Generics
+
+```ts
+type ApiResult<T> = { ok: true; data: T } | { ok: false; error: string };
+
+async function fetchJson<T>(url: string): Promise<ApiResult<T>> {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return { ok: false, error: `HTTP ${res.status}` };
+    return { ok: true, data: (await res.json()) as T };
+  } catch (error) {
+    return { ok: false, error: String(error) };
+  }
+}
+```
+
+## Highlighted Lines (Config)
+
+```yaml deploy/pipeline.yaml {2,6-8}
+pipeline:
+  name: docline-release
+  triggers:
+    - push
+  steps:
+    - run: npm ci
+    - run: npm run build
+    - run: npm run export
+```
+
+## Terraform
+
+```hcl
+module "docs_cdn" {
+  source  = "terraform-aws-modules/cloudfront/aws"
+  aliases = ["docs.example.com"]
+
+  default_cache_behavior = {
+    target_origin_id       = "docs-bucket"
+    viewer_protocol_policy = "redirect-to-https"
+  }
+}
+```
+
+## Go + Interfaces
+
+```go
+type Logger interface {
+    Info(msg string, args ...any)
+    Error(msg string, args ...any)
+}
+
+func Serve(logger Logger) {
+    logger.Info("server started", "port", 8080)
+}
+```
+
+## Bash + jq
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+curl -s "https://api.example.com/v2/pages?limit=5" \
+  -H "Authorization: Bearer ${DOCS_TOKEN}" \
+  | jq '.items[] | {slug, updatedAt}'
+```

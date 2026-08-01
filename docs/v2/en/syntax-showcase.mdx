@@ -1,0 +1,60 @@
+---
+title: Syntax Showcase
+description: v2 dummy page to validate language coverage and code rendering quality.
+---
+
+## Terraform
+
+```hcl
+resource "aws_s3_bucket" "docs" {
+  bucket = "docline-assets-prod"
+
+  tags = {
+    Environment = "prod"
+    Team        = "docs"
+  }
+}
+```
+
+## Kotlin
+
+```kotlin
+data class FeatureFlag(
+  val key: String,
+  val enabled: Boolean
+)
+
+fun isEnabled(flag: FeatureFlag): Boolean = flag.enabled
+```
+
+## C#
+
+```csharp
+public record Tenant(string Id, string Name);
+
+public static bool IsValid(Tenant tenant)
+{
+    return !string.IsNullOrWhiteSpace(tenant.Id);
+}
+```
+
+## GraphQL
+
+```graphql
+query DocsPage($slug: String!) {
+  page(slug: $slug) {
+    title
+    description
+    updatedAt
+  }
+}
+```
+
+## TOML
+
+```toml
+[docs]
+name = "docline"
+version = "2.0"
+multilingual = true
+```

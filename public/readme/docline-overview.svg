@@ -1,0 +1,40 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff5e6"/>
+      <stop offset="1" stop-color="#f5fbff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f9f5ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#bg)"/>
+  <rect x="56" y="56" width="1088" height="528" rx="22" fill="url(#panel)" stroke="#e9dac0"/>
+  <rect x="88" y="96" width="1024" height="64" rx="14" fill="#fff" stroke="#e8d7bb"/>
+  <circle cx="120" cy="128" r="14" fill="#d86a2c"/>
+  <rect x="148" y="116" width="140" height="24" rx="8" fill="#2f2a24"/>
+  <rect x="840" y="114" width="92" height="28" rx="8" fill="#f3ead8"/>
+  <rect x="944" y="114" width="72" height="28" rx="8" fill="#f3ead8"/>
+  <rect x="1028" y="114" width="56" height="28" rx="8" fill="#d86a2c"/>
+  <rect x="88" y="176" width="276" height="376" rx="16" fill="#fff" stroke="#e8d7bb"/>
+  <rect x="384" y="176" width="728" height="376" rx="16" fill="#fff" stroke="#e8d7bb"/>
+  <rect x="108" y="202" width="132" height="14" rx="6" fill="#9e8f77"/>
+  <rect x="108" y="236" width="220" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="108" y="260" width="180" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="108" y="304" width="132" height="14" rx="6" fill="#9e8f77"/>
+  <rect x="108" y="338" width="220" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="108" y="362" width="190" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="108" y="406" width="132" height="14" rx="6" fill="#9e8f77"/>
+  <rect x="108" y="440" width="220" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="108" y="464" width="170" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="420" y="218" width="280" height="22" rx="8" fill="#2f2a24"/>
+  <rect x="420" y="256" width="640" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="420" y="280" width="620" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="420" y="304" width="596" height="12" rx="6" fill="#e8dcc8"/>
+  <rect x="420" y="344" width="200" height="66" rx="12" fill="#fff9ec" stroke="#f0d39f"/>
+  <rect x="642" y="344" width="200" height="66" rx="12" fill="#eff9ff" stroke="#b9e3ff"/>
+  <rect x="864" y="344" width="200" height="66" rx="12" fill="#f2fff1" stroke="#bbe7ba"/>
+  <rect x="420" y="438" width="644" height="90" rx="12" fill="#fbf7ef" stroke="#e8dcc8"/>
+  <text x="420" y="590" fill="#6f6558" font-family="ui-sans-serif,system-ui" font-size="18">docline UI preview illustration</text>
+</svg>

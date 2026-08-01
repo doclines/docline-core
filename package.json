@@ -1,0 +1,58 @@
+{
+  "name": "create-docline",
+  "version": "1.0.2",
+  "description": "OpenSourceDocs Documentation Template",
+  "type": "module",
+  "files": [
+    "docs.schema.json",
+    "public",
+    "scripts",
+    "src",
+    "index.html",
+    "vite.config.js",
+    "tailwind.config.js",
+    "postcss.config.js",
+    "README.md"
+  ],
+  "bin": {
+    "docline": "scripts/docline-cli.mjs",
+    "create-docline": "scripts/docline-cli.mjs"
+  },
+  "scripts": {
+    "new": "node scripts/scaffold-template.mjs",
+    "docs:compile": "node scripts/build-docline-content.mjs",
+    "start": "npm run dev",
+    "dev": "npm run docs:compile && vite",
+    "build": "npm run docs:compile && vite build",
+    "build:pages": "npm run docs:compile && vite build",
+    "a11y": "npm run build && node scripts/a11y-docline.mjs",
+    "export": "npm run build && node scripts/export-docline.mjs",
+    "rename-page": "node scripts/rename-docline-page.mjs",
+    "import:page": "node scripts/import-doc-page.mjs",
+    "check": "npm run validate && npm run broken-links",
+    "validate": "npm run docs:compile && node scripts/validate-docline.mjs",
+    "broken-links": "npm run docs:compile && node scripts/check-docline-links.mjs --check-anchors",
+    "broken-links:external": "npm run docs:compile && node scripts/check-docline-links.mjs --check-anchors --check-external",
+    "readme:capture": "npm run build && node scripts/capture-readme-assets.mjs",
+    "preview": "vite preview",
+    "scaffold:starter": "node scripts/scaffold-template.mjs"
+  },
+  "keywords": [],
+  "author": "chinna NJ",
+  "license": "MIT",
+  "dependencies": {
+    "dompurify": "^3.4.11",
+    "marked": "^18.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.25",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.0.12"
+  }
+}

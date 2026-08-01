@@ -1,0 +1,30 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="340" rx="24" fill="#fffaf1"/>
+  <rect x="36" y="38" width="220" height="96" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="60" y="77" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">docs/v*/locale</text>
+  <text x="60" y="106" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">.md / .mdx files</text>
+
+  <rect x="328" y="38" width="252" height="96" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="352" y="77" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">docs:compile</text>
+  <text x="352" y="106" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">real MDX + React compile</text>
+
+  <rect x="652" y="38" width="252" height="96" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="676" y="77" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">static dataset</text>
+  <text x="676" y="106" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">HTML + TOC + search index</text>
+
+  <rect x="976" y="38" width="188" height="96" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="1000" y="77" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">vite build</text>
+  <text x="1000" y="106" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">dist/ output</text>
+
+  <path d="M256 86H318" stroke="#d86a2c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M580 86H642" stroke="#d86a2c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M904 86H966" stroke="#d86a2c" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="36" y="192" width="552" height="104" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="60" y="232" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">Config-driven switches (Mintlify-style)</text>
+  <text x="60" y="262" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">contentMatrix: versions, locales, roots, per-context navigation</text>
+
+  <rect x="624" y="192" width="540" height="104" rx="14" fill="#ffffff" stroke="#e7d8bc"/>
+  <text x="648" y="232" fill="#2f2a24" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="600">Deploy targets</text>
+  <text x="648" y="262" fill="#7d715f" font-family="ui-sans-serif,system-ui" font-size="16">GitHub Pages workflow + Vercel + Netlify configs included</text>
+</svg>

@@ -1,0 +1,64 @@
+---
+title: Demo UX de Codigo
+description: Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes.
+---
+
+## Ejemplo API (Tabs)
+
+<Tabs>
+  <Tab title="curl">
+
+```bash
+curl -X PATCH https://api.example.com/v2/users/usr_20 \
+  -H "Authorization: Bearer $DOCS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"active":true}'
+```
+
+  </Tab>
+  <Tab title="Node">
+
+```js
+await fetch('https://api.example.com/v2/users/usr_20', {
+  method: 'PATCH',
+  headers: {
+    Authorization: `Bearer ${process.env.DOCS_TOKEN}`,
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ active: true }),
+});
+```
+
+  </Tab>
+</Tabs>
+
+## Configuracion
+
+<CodeGroup>
+```yaml env.yaml
+env:
+  APP_ENV: production
+  FEATURE_DOCS_V2: true
+```
+
+```ini env.ini
+[env]
+APP_ENV=production
+FEATURE_DOCS_V2=true
+```
+</CodeGroup>
+
+## SQL + JSON
+
+```sql
+UPDATE users
+SET active = true
+WHERE id = 'usr_20';
+```
+
+```json
+{
+  "ok": true,
+  "updated": 1
+}
+```

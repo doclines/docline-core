@@ -1,0 +1,28 @@
+---
+title: Componentes (v2)
+description: Modelo MDX compilado en build.
+---
+
+# Componentes
+
+<Warning>Todos los componentes se procesan durante `docs:compile`.</Warning>
+
+## Bloques API
+
+<Endpoint method="POST" path="/v1/documents/import">
+	Crea una nueva importacion de documentos.
+</Endpoint>
+
+<ParamTable>
+	<Param name="sourceUrl" type="string" required={true}>URL publica del contenido.</Param>
+	<Param name="language" type="string" required={false}>Idioma preferido (ejemplo: es, en).</Param>
+	<Param name="overwrite" type="boolean" required={false}>Reemplaza el contenido existente.</Param>
+</ParamTable>
+
+<ResponseExample status="201" title="Respuesta de ejemplo">
+{`{
+	"id": "imp_123",
+	"status": "queued",
+	"createdAt": "2026-08-01T11:20:00Z"
+}`}
+</ResponseExample>

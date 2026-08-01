@@ -1,0 +1,71 @@
+---
+title: Demo UX de Codigo
+description: Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo.
+---
+
+## Endpoint Rapido (Pestanas)
+
+<Tabs>
+  <Tab title="curl">
+
+```bash
+curl -X GET "https://api.example.com/v1/projects?limit=20" \
+  -H "Authorization: Bearer $DOCS_TOKEN"
+```
+
+  </Tab>
+  <Tab title="JavaScript">
+
+```js
+const resp = await fetch('https://api.example.com/v1/projects?limit=20', {
+  headers: { Authorization: `Bearer ${process.env.DOCS_TOKEN}` },
+});
+
+const projects = await resp.json();
+console.log(projects.length);
+```
+
+  </Tab>
+  <Tab title="Python">
+
+```python
+import requests
+
+resp = requests.get(
+    "https://api.example.com/v1/projects?limit=20",
+    headers={"Authorization": f"Bearer {DOCS_TOKEN}"},
+)
+
+print(len(resp.json()))
+```
+
+  </Tab>
+</Tabs>
+
+## Configuracion (CodeGroup)
+
+<CodeGroup>
+```yaml app.yaml
+feature_flags:
+  docs_search: true
+  ai_assistant: false
+```
+
+```json app.json
+{
+  "feature_flags": {
+    "docs_search": true,
+    "ai_assistant": false
+  }
+}
+```
+</CodeGroup>
+
+## SQL
+
+```sql
+SELECT slug, title
+FROM pages
+WHERE locale = 'es'
+ORDER BY title;
+```

@@ -1,0 +1,53 @@
+---
+title: Demo Avanzado de Resaltado
+description: Pagina de prueba con gramaticas complejas para validar calidad de resaltado.
+---
+
+## JavaScript
+
+```js
+const token = process.env.DOCS_TOKEN ?? 'dev-token';
+const safe = (value) => String(value).replace(/[<>"']/g, '_');
+console.log(`token-length=${safe(token).length}`);
+```
+
+## SQL
+
+```sql
+SELECT p.slug, p.title, c.locale
+FROM pages p
+JOIN contexts c ON c.id = p.context_id
+WHERE c.version = 'v2'
+  AND c.locale IN ('es', 'en')
+ORDER BY p.updated_at DESC
+LIMIT 25;
+```
+
+## Dockerfile
+
+```dockerfile
+FROM python:3.13-slim
+WORKDIR /app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+CMD ["python", "main.py"]
+```
+
+## GraphQL
+
+```graphql
+query PageBySlug($slug: String!) {
+  page(slug: $slug) {
+    slug
+    title
+    blocks {
+      __typename
+      ... on CodeBlock {
+        language
+        code
+      }
+    }
+  }
+}
+```

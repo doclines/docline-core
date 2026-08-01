@@ -1,0 +1,1352 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-01T07:21:23.980Z",
+  "siteName": "docline",
+  "defaultContextKey": "v1:en",
+  "contexts": [
+    {
+      "key": "v1:en",
+      "locale": "en",
+      "localeLabel": "English",
+      "version": "v1",
+      "versionLabel": "v1",
+      "label": "v1 - English",
+      "navigation": {
+        "tabs": [
+          {
+            "id": "guides",
+            "label": "Guides",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  {
+                    "path": "introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "path": "quickstart",
+                    "title": "Quickstart"
+                  },
+                  {
+                    "path": "components",
+                    "title": "Components"
+                  },
+                  {
+                    "path": "syntax-showcase",
+                    "title": "Syntax Showcase"
+                  },
+                  {
+                    "path": "code-ux-demo",
+                    "title": "Code Ux Demo"
+                  },
+                  {
+                    "path": "advanced-highlight-demo",
+                    "title": "Advanced Highlight Demo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "v1:es",
+      "locale": "es",
+      "localeLabel": "Español",
+      "version": "v1",
+      "versionLabel": "v1",
+      "label": "v1 - Español",
+      "navigation": {
+        "tabs": [
+          {
+            "id": "guias",
+            "label": "Guias",
+            "groups": [
+              {
+                "group": "Comenzar",
+                "pages": [
+                  {
+                    "path": "introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "path": "quickstart",
+                    "title": "Quickstart"
+                  },
+                  {
+                    "path": "components",
+                    "title": "Components"
+                  },
+                  {
+                    "path": "syntax-showcase",
+                    "title": "Syntax Showcase"
+                  },
+                  {
+                    "path": "code-ux-demo",
+                    "title": "Code Ux Demo"
+                  },
+                  {
+                    "path": "advanced-highlight-demo",
+                    "title": "Advanced Highlight Demo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "v2:en",
+      "locale": "en",
+      "localeLabel": "English",
+      "version": "v2",
+      "versionLabel": "v2",
+      "label": "v2 - English",
+      "navigation": {
+        "tabs": [
+          {
+            "id": "guides",
+            "label": "Guides",
+            "groups": [
+              {
+                "group": "What is new",
+                "pages": [
+                  {
+                    "path": "introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "path": "quickstart",
+                    "title": "Quickstart"
+                  },
+                  {
+                    "path": "components",
+                    "title": "Components"
+                  },
+                  {
+                    "path": "syntax-showcase",
+                    "title": "Syntax Showcase"
+                  },
+                  {
+                    "path": "code-ux-demo",
+                    "title": "Code Ux Demo"
+                  },
+                  {
+                    "path": "advanced-highlight-demo",
+                    "title": "Advanced Highlight Demo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "v2:es",
+      "locale": "es",
+      "localeLabel": "Español",
+      "version": "v2",
+      "versionLabel": "v2",
+      "label": "v2 - Español",
+      "navigation": {
+        "tabs": [
+          {
+            "id": "guias",
+            "label": "Guias",
+            "groups": [
+              {
+                "group": "Novedades",
+                "pages": [
+                  {
+                    "path": "introduction",
+                    "title": "Introduction"
+                  },
+                  {
+                    "path": "quickstart",
+                    "title": "Quickstart"
+                  },
+                  {
+                    "path": "components",
+                    "title": "Components"
+                  },
+                  {
+                    "path": "syntax-showcase",
+                    "title": "Syntax Showcase"
+                  },
+                  {
+                    "path": "code-ux-demo",
+                    "title": "Code Ux Demo"
+                  },
+                  {
+                    "path": "advanced-highlight-demo",
+                    "title": "Advanced Highlight Demo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "pages": {
+    "v1:en": {
+      "introduction": {
+        "slug": "introduction",
+        "title": "Introduction",
+        "description": "Welcome to docline v1 English docs.",
+        "html": "<h1 id=\"introduction\">Introduction</h1>\n<p>docline compiles MDX to static HTML at build time and ships a static search index.</p>\n<div class=\"callout callout-tip\"><p>This page demonstrates real MDX components rendered through the MDX compiler.</p></div>\n<div class=\"card-group\" style=\"grid-template-columns:repeat(2, minmax(0, 1fr))\"><a href=\"/quickstart\" style=\"text-decoration:none;color:inherit\"><div class=\"card\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Static build</p><p>Generate pages during build, not at runtime.</p></div></a><a href=\"/components\" style=\"text-decoration:none;color:inherit\"><div class=\"card\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Config-driven</p><p>Control versions, locales, and navigation in docs.json.</p></div></a></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "introduction",
+            "text": "Introduction"
+          }
+        ],
+        "wordCount": 51,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/introduction.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.990Z",
+        "contentHash": "1c92b639429da30e",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Introduction",
+          "description": "Welcome to docline v1 English docs."
+        },
+        "plainText": "Introduction Welcome to docline v1 English docs. Introduction docline compiles MDX to static HTML at build time and ships a static search index. This page demonstrates real MDX components rendered through the MDX compiler. Static build Generate pages during build, not at runtime. Config-driven Control versions, locales, and navigation in docs.json."
+      },
+      "quickstart": {
+        "slug": "quickstart",
+        "title": "Quickstart",
+        "description": "Build and run docline locally.",
+        "html": "<h1 id=\"quickstart\">Quickstart</h1>\n<div class=\"steps\"><div class=\"step\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Install dependencies</p>Run <code>npm install</code> in the repository root.</div><div class=\"step\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Compile static docs</p>Run <code>npm run docs:compile</code>.</div><div class=\"step\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Start local preview</p>Run <code>npm run dev</code> and open the shown URL.</div></div>\n<h2 id=\"why-static-generation\">Why static generation</h2>\n<p>All markdown and MDX are compiled ahead of time into static HTML and search data.</p>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "quickstart",
+            "text": "Quickstart"
+          },
+          {
+            "level": 2,
+            "id": "why-static-generation",
+            "text": "Why static generation"
+          }
+        ],
+        "wordCount": 54,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/quickstart.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.990Z",
+        "contentHash": "fb6865637c8e2fdf",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Quickstart",
+          "description": "Build and run docline locally."
+        },
+        "plainText": "Quickstart Build and run docline locally. Quickstart Install dependencies Run npm install in the repository root. Compile static docs Run npm run docs:compile . Start local preview Run npm run dev and open the shown URL. Why static generation All markdown and MDX are compiled ahead of time into static HTML and search data."
+      },
+      "components": {
+        "slug": "components",
+        "title": "Components",
+        "description": "Prebuilt MDX components in docline.",
+        "html": "<h1 id=\"components\">Components</h1>\n<div class=\"doc-badge-group\"><span class=\"doc-badge\">Badge</span><span class=\"doc-badge is-tip\">Tip</span><span class=\"doc-badge is-warning\">Warning</span></div>\n<div class=\"doc-columns\" style=\"grid-template-columns:repeat(2, minmax(0, 1fr))\"><div class=\"doc-column\"><div class=\"callout callout-note\">Use <code>Card</code>, <code>CardGroup</code>, <code>Steps</code>, <code>Accordion</code>, and more directly in MDX.</div></div><div class=\"doc-column\"><details class=\"accordion\"><summary>Available blocks</summary><p>Tip, Note, Warning, Callout, Card, CardGroup, Steps, Tabs, BadgeGroup, Columns, and Frame.</p></details></div></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "components",
+            "text": "Components"
+          }
+        ],
+        "wordCount": 38,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/components.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.990Z",
+        "contentHash": "85cf092ffe42d7a6",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Components",
+          "description": "Prebuilt MDX components in docline."
+        },
+        "plainText": "Components Prebuilt MDX components in docline. Components Badge Tip Warning Use Card , CardGroup , Steps , Accordion , and more directly in MDX. Available blocks Tip, Note, Warning, Callout, Card, CardGroup, Steps, Tabs, BadgeGroup, Columns, and Frame."
+      },
+      "syntax-showcase": {
+        "slug": "syntax-showcase",
+        "title": "Syntax Showcase",
+        "description": "Dummy page to preview multi-language syntax highlighting in docline.",
+        "html": "<h2 id=\"api-json\">API JSON</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"id\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"usr_1024\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"email\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"user@example.com\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"roles\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">[</span><span class=\"hljs-string\">\"admin\"</span><span class=\"hljs-punctuation\">,</span> <span class=\"hljs-string\">\"editor\"</span><span class=\"hljs-punctuation\">]</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"active\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">true</span></span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>\n<h2 id=\"typescript\">TypeScript</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">TS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-ts\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">type</span> <span class=\"hljs-title class_\">User</span> = {\n  <span class=\"hljs-attr\">id</span>: <span class=\"hljs-built_in\">string</span>;\n  <span class=\"hljs-attr\">email</span>: <span class=\"hljs-built_in\">string</span>;\n  <span class=\"hljs-attr\">roles</span>: <span class=\"hljs-built_in\">string</span>[];\n  <span class=\"hljs-attr\">active</span>: <span class=\"hljs-built_in\">boolean</span>;\n};\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">canEdit</span>(<span class=\"hljs-params\"><span class=\"hljs-attr\">user</span>: <span class=\"hljs-title class_\">User</span></span>): <span class=\"hljs-built_in\">boolean</span> {\n  <span class=\"hljs-keyword\">return</span> user.<span class=\"hljs-property\">active</span> &amp;&amp; user.<span class=\"hljs-property\">roles</span>.<span class=\"hljs-title function_\">includes</span>(<span class=\"hljs-string\">'editor'</span>);\n}\n</code></pre></div>\n<h2 id=\"python\">Python</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">PYTHON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-python\"><span class=\"hljs-keyword\">from</span> dataclasses <span class=\"hljs-keyword\">import</span> dataclass\n\n<span class=\"hljs-meta\">@dataclass</span>\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Job</span>:\n    <span class=\"hljs-built_in\">id</span>: <span class=\"hljs-built_in\">str</span>\n    retries: <span class=\"hljs-built_in\">int</span> = <span class=\"hljs-number\">0</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">run</span>(<span class=\"hljs-params\">job: Job</span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">f\"running <span class=\"hljs-subst\">{job.<span class=\"hljs-built_in\">id</span>}</span> (retries=<span class=\"hljs-subst\">{job.retries}</span>)\"</span>\n</code></pre></div>\n<h2 id=\"bash\">Bash</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">BASH</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-bash\"><span class=\"hljs-meta\">#!/usr/bin/env bash</span>\n<span class=\"hljs-built_in\">set</span> -euo pipefail\n\n<span class=\"hljs-built_in\">export</span> API_BASE_URL=<span class=\"hljs-string\">\"https://api.example.com\"</span>\ncurl -s <span class=\"hljs-string\">\"<span class=\"hljs-variable\">$API_BASE_URL</span>/health\"</span> | jq .\n</code></pre></div>\n<h2 id=\"go\">Go</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GO</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-go\"><span class=\"hljs-keyword\">package</span> main\n\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">\"fmt\"</span>\n\n<span class=\"hljs-keyword\">type</span> Config <span class=\"hljs-keyword\">struct</span> {\n    Port <span class=\"hljs-type\">int</span>\n}\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">main</span><span class=\"hljs-params\">()</span></span> {\n    cfg := Config{Port: <span class=\"hljs-number\">8080</span>}\n    fmt.Printf(<span class=\"hljs-string\">\"listening on :%d\\n\"</span>, cfg.Port)\n}\n</code></pre></div>\n<h2 id=\"java\">Java</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JAVA</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-java\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">HealthService</span> {\n  <span class=\"hljs-keyword\">public</span> String <span class=\"hljs-title function_\">ping</span><span class=\"hljs-params\">()</span> {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">\"ok\"</span>;\n  }\n}\n</code></pre></div>\n<h2 id=\"rust\">Rust</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">RUST</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-rust\"><span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">main</span>() {\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">env</span> = <span class=\"hljs-string\">\"prod\"</span>;\n    <span class=\"hljs-built_in\">println!</span>(<span class=\"hljs-string\">\"service started in {}\"</span>, env);\n}\n</code></pre></div>\n<h2 id=\"sql\">SQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">SELECT</span> id, email, created_at\n<span class=\"hljs-keyword\">FROM</span> users\n<span class=\"hljs-keyword\">WHERE</span> active <span class=\"hljs-operator\">=</span> <span class=\"hljs-literal\">true</span>\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> created_at <span class=\"hljs-keyword\">DESC</span>\nLIMIT <span class=\"hljs-number\">20</span>;\n</code></pre></div>\n<h2 id=\"yaml\">YAML</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">YAML</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">service:</span>\n  <span class=\"hljs-attr\">name:</span> <span class=\"hljs-string\">docs-api</span>\n  <span class=\"hljs-attr\">replicas:</span> <span class=\"hljs-number\">2</span>\n  <span class=\"hljs-attr\">resources:</span>\n    <span class=\"hljs-attr\">cpu:</span> <span class=\"hljs-string\">\"250m\"</span>\n    <span class=\"hljs-attr\">memory:</span> <span class=\"hljs-string\">\"512Mi\"</span>\n</code></pre></div>\n<h2 id=\"dockerfile\">Dockerfile</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">DOCKERFILE</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-dockerfile\"><span class=\"hljs-keyword\">FROM</span> node:<span class=\"hljs-number\">22</span>-alpine\n<span class=\"hljs-keyword\">WORKDIR</span><span class=\"language-bash\"> /app</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> package*.json ./</span>\n<span class=\"hljs-keyword\">RUN</span><span class=\"language-bash\"> npm ci --omit=dev</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> . .</span>\n<span class=\"hljs-keyword\">CMD</span><span class=\"language-bash\"> [<span class=\"hljs-string\">\"node\"</span>, <span class=\"hljs-string\">\"server.js\"</span>]</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "api-json",
+            "text": "API JSON"
+          },
+          {
+            "level": 2,
+            "id": "typescript",
+            "text": "TypeScript"
+          },
+          {
+            "level": 2,
+            "id": "python",
+            "text": "Python"
+          },
+          {
+            "level": 2,
+            "id": "bash",
+            "text": "Bash"
+          },
+          {
+            "level": 2,
+            "id": "go",
+            "text": "Go"
+          },
+          {
+            "level": 2,
+            "id": "java",
+            "text": "Java"
+          },
+          {
+            "level": 2,
+            "id": "rust",
+            "text": "Rust"
+          },
+          {
+            "level": 2,
+            "id": "sql",
+            "text": "SQL"
+          },
+          {
+            "level": 2,
+            "id": "yaml",
+            "text": "YAML"
+          },
+          {
+            "level": 2,
+            "id": "dockerfile",
+            "text": "Dockerfile"
+          }
+        ],
+        "wordCount": 263,
+        "readingMinutes": 2,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/syntax-showcase.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.962Z",
+        "contentHash": "3aa0b143d1b1575c",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Syntax Showcase",
+          "description": "Dummy page to preview multi-language syntax highlighting in docline."
+        },
+        "plainText": "Syntax Showcase Dummy page to preview multi-language syntax highlighting in docline. API JSON JSON Copy { \"id\" : \"usr_1024\" , \"email\" : \"user@example.com\" , \"roles\" : [ \"admin\" , \"editor\" ] , \"active\" : true } TypeScript TS Copy export type User = { id : string ; email : string ; roles : string []; active : boolean ; }; export function canEdit ( user : User ): boolean { return user. active &amp;&amp; user. roles . includes ( 'editor' ); } Python PYTHON Copy from dataclasses import dataclass @dataclass class Job : id : str retries: int = 0 def run ( job: Job ) -&gt; str : return f\"running {job. id } (retries= {job.retries} )\" Bash BASH Copy #!/usr/bin/env bash set -euo pipefail export API_BASE_URL= \"https://api.example.com\" curl -s \" $API_BASE_URL /health\" | jq . Go GO Copy package main import \"fmt\" type Config struct { Port int } func main () { cfg := Config{Port: 8080 } fmt.Printf( \"listening on :%d\\n\" , cfg.Port) } Java JAVA Copy public class HealthService { public String ping () { return \"ok\" ; } } Rust RUST Copy fn main () { let env = \"prod\" ; println! ( \"service started in {}\" , env); } SQL SQL Copy SELECT id, email, created_at FROM users WHERE active = true ORDER BY created_at DESC LIMIT 20 ; YAML YAML Copy service: name: docs-api replicas: 2 resources: cpu: \"250m\" memory: \"512Mi\" Dockerfile DOCKERFILE Copy FROM node: 22 -alpine WORKDIR /app COPY package*.json ./ RUN npm ci --omit=dev COPY . . CMD [ \"node\" , \"server.js\" ]"
+      },
+      "code-ux-demo": {
+        "slug": "code-ux-demo",
+        "title": "Code UX Demo",
+        "description": "Multi-language tabbed examples and code patterns for UX validation.",
+        "html": "<h2 id=\"quickstart-endpoint-tabs\">Quickstart Endpoint (Tabs)</h2>\n<div class=\"tabs-container\"><div class=\"tabs-nav\"><button type=\"button\" class=\"tabs-nav-btn active\" data-index=\"0\">curl</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"1\">JavaScript</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"2\">Python</button><button type=\"button\" class=\"tabs-copy-btn\" title=\"Copy\">Copy</button></div><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"curl\" style=\"display: block;\"><pre><code class=\"hljs language-bash\">curl -X POST https://api.example.com/v1/tickets \\\n  -H <span class=\"hljs-string\">\"Authorization: Bearer <span class=\"hljs-variable\">$DOCS_TOKEN</span>\"</span> \\\n  -H <span class=\"hljs-string\">\"Content-Type: application/json\"</span> \\\n  -d <span class=\"hljs-string\">'{\"title\":\"Printer offline\",\"priority\":\"high\"}'</span>\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"JavaScript\" style=\"display: none;\"><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> response = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">fetch</span>(<span class=\"hljs-string\">'https://api.example.com/v1/tickets'</span>, {\n  <span class=\"hljs-attr\">method</span>: <span class=\"hljs-string\">'POST'</span>,\n  <span class=\"hljs-attr\">headers</span>: {\n    <span class=\"hljs-title class_\">Authorization</span>: <span class=\"hljs-string\">`Bearer <span class=\"hljs-subst\">${process.env.DOCS_TOKEN}</span>`</span>,\n    <span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span>,\n  },\n  <span class=\"hljs-attr\">body</span>: <span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>({ <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'Printer offline'</span>, <span class=\"hljs-attr\">priority</span>: <span class=\"hljs-string\">'high'</span> }),\n});\n\n<span class=\"hljs-keyword\">const</span> data = <span class=\"hljs-keyword\">await</span> response.<span class=\"hljs-title function_\">json</span>();\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(data.<span class=\"hljs-property\">id</span>);\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"Python\" style=\"display: none;\"><pre><code class=\"hljs language-python\"><span class=\"hljs-keyword\">import</span> requests\n\nresponse = requests.post(\n    <span class=\"hljs-string\">\"https://api.example.com/v1/tickets\"</span>,\n    headers={<span class=\"hljs-string\">\"Authorization\"</span>: <span class=\"hljs-string\">f\"Bearer <span class=\"hljs-subst\">{DOCS_TOKEN}</span>\"</span>},\n    json={<span class=\"hljs-string\">\"title\"</span>: <span class=\"hljs-string\">\"Printer offline\"</span>, <span class=\"hljs-string\">\"priority\"</span>: <span class=\"hljs-string\">\"high\"</span>},\n    timeout=<span class=\"hljs-number\">10</span>,\n)\n\n<span class=\"hljs-built_in\">print</span>(response.json()[<span class=\"hljs-string\">\"id\"</span>])\n</code></pre></section></div>\n<h2 id=\"auth-config-codegroup\">Auth Config (CodeGroup)</h2>\n<div class=\"code-group\"><div class=\"code-group-tabs\"><button type=\"button\" class=\"code-group-tab active\" data-index=\"0\">config.yaml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"1\">config.toml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"2\">config.json</button><button type=\"button\" class=\"code-group-copy\" title=\"Copy\">Copy</button></div><div class=\"code-group-panel\" style=\"display: block;\"><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">auth:</span>\n  <span class=\"hljs-attr\">provider:</span> <span class=\"hljs-string\">oidc</span>\n  <span class=\"hljs-attr\">issuer:</span> <span class=\"hljs-string\">https://auth.example.com</span>\n  <span class=\"hljs-attr\">audience:</span> <span class=\"hljs-string\">docs-ui</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-toml\"><span class=\"hljs-section\">[auth]</span>\n<span class=\"hljs-attr\">provider</span> = <span class=\"hljs-string\">\"oidc\"</span>\n<span class=\"hljs-attr\">issuer</span> = <span class=\"hljs-string\">\"https://auth.example.com\"</span>\n<span class=\"hljs-attr\">audience</span> = <span class=\"hljs-string\">\"docs-ui\"</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"auth\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-attr\">\"provider\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"oidc\"</span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"issuer\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"https://auth.example.com\"</span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"audience\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"docs-ui\"</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div></div>\n<h2 id=\"sql--json-payload\">SQL + JSON Payload</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">SELECT</span> id, title, status, updated_at\n<span class=\"hljs-keyword\">FROM</span> tickets\n<span class=\"hljs-keyword\">WHERE</span> status <span class=\"hljs-keyword\">IN</span> (<span class=\"hljs-string\">'open'</span>, <span class=\"hljs-string\">'in_progress'</span>)\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> updated_at <span class=\"hljs-keyword\">DESC</span>\nLIMIT <span class=\"hljs-number\">50</span>;\n</code></pre></div>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"ticket\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-attr\">\"id\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"tkt_9921\"</span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"status\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"open\"</span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"assignee\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n      <span class=\"hljs-attr\">\"id\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"usr_20\"</span><span class=\"hljs-punctuation\">,</span>\n      <span class=\"hljs-attr\">\"name\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"Alex\"</span>\n    <span class=\"hljs-punctuation\">}</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "quickstart-endpoint-tabs",
+            "text": "Quickstart Endpoint (Tabs)"
+          },
+          {
+            "level": 2,
+            "id": "auth-config-codegroup",
+            "text": "Auth Config (CodeGroup)"
+          },
+          {
+            "level": 2,
+            "id": "sql--json-payload",
+            "text": "SQL + JSON Payload"
+          }
+        ],
+        "wordCount": 221,
+        "readingMinutes": 2,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/code-ux-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.973Z",
+        "contentHash": "7206115a2ec2f99a",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Code UX Demo",
+          "description": "Multi-language tabbed examples and code patterns for UX validation."
+        },
+        "plainText": "Code UX Demo Multi-language tabbed examples and code patterns for UX validation. Quickstart Endpoint (Tabs) curl JavaScript Python Copy curl -X POST https://api.example.com/v1/tickets \\ -H \"Authorization: Bearer $DOCS_TOKEN \" \\ -H \"Content-Type: application/json\" \\ -d '{\"title\":\"Printer offline\",\"priority\":\"high\"}' const response = await fetch ( 'https://api.example.com/v1/tickets' , { method : 'POST' , headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` , 'Content-Type' : 'application/json' , }, body : JSON . stringify ({ title : 'Printer offline' , priority : 'high' }), }); const data = await response. json (); console . log (data. id ); import requests response = requests.post( \"https://api.example.com/v1/tickets\" , headers={ \"Authorization\" : f\"Bearer {DOCS_TOKEN} \" }, json={ \"title\" : \"Printer offline\" , \"priority\" : \"high\" }, timeout= 10 , ) print (response.json()[ \"id\" ]) Auth Config (CodeGroup) config.yaml config.toml config.json Copy auth: provider: oidc issuer: https://auth.example.com audience: docs-ui [auth] provider = \"oidc\" issuer = \"https://auth.example.com\" audience = \"docs-ui\" { \"auth\" : { \"provider\" : \"oidc\" , \"issuer\" : \"https://auth.example.com\" , \"audience\" : \"docs-ui\" } } SQL + JSON Payload SQL Copy SELECT id, title, status, updated_at FROM tickets WHERE status IN ( 'open' , 'in_progress' ) ORDER BY updated_at DESC LIMIT 50 ; JSON Copy { \"ticket\" : { \"id\" : \"tkt_9921\" , \"status\" : \"open\" , \"assignee\" : { \"id\" : \"usr_20\" , \"name\" : \"Alex\" } } }"
+      },
+      "advanced-highlight-demo": {
+        "slug": "advanced-highlight-demo",
+        "title": "Advanced Highlight Demo",
+        "description": "Stress-test page for syntax highlighting quality across complex grammars.",
+        "html": "<h2 id=\"javascript-regex--template-literals\">JavaScript (Regex + Template Literals)</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> routePattern = <span class=\"hljs-regexp\">/^(?&lt;method&gt;GET|POST|PATCH)\\s+(?&lt;path&gt;\\/api\\/[\\w/-]+)$/i</span>;\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">parseRoute</span>(<span class=\"hljs-params\">input</span>) {\n  <span class=\"hljs-keyword\">const</span> match = routePattern.<span class=\"hljs-title function_\">exec</span>(input?.<span class=\"hljs-title function_\">trim</span>() || <span class=\"hljs-string\">''</span>);\n  <span class=\"hljs-keyword\">if</span> (!match?.<span class=\"hljs-property\">groups</span>) <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Error</span>(<span class=\"hljs-string\">`Invalid route: <span class=\"hljs-subst\">${input}</span>`</span>);\n\n  <span class=\"hljs-keyword\">const</span> { method, path } = match.<span class=\"hljs-property\">groups</span>;\n  <span class=\"hljs-keyword\">return</span> {\n    method,\n    path,\n    <span class=\"hljs-attr\">cacheKey</span>: <span class=\"hljs-string\">`<span class=\"hljs-subst\">${method}</span>:<span class=\"hljs-subst\">${path}</span>`</span>,\n  };\n}\n</code></pre></div>\n<h2 id=\"line-highlight--filename-demo\">Line Highlight + Filename Demo</h2>\n<div class=\"code-block-wrapper has-filename\"><div class=\"code-block-toolbar\"><span class=\"code-filename\">src/lib/route-parser.ts</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre class=\"has-code-lines\"><code class=\"hljs language-ts has-code-lines\"><span class=\"code-line code-line-highlight\"><span class=\"hljs-keyword\">type</span> <span class=\"hljs-title class_\">ParsedRoute</span> = {</span>\n<span class=\"code-line\">  <span class=\"hljs-attr\">method</span>: <span class=\"hljs-string\">'GET'</span> | <span class=\"hljs-string\">'POST'</span> | <span class=\"hljs-string\">'PATCH'</span>;</span>\n<span class=\"code-line\">  <span class=\"hljs-attr\">path</span>: <span class=\"hljs-built_in\">string</span>;</span>\n<span class=\"code-line\">  <span class=\"hljs-attr\">cacheKey</span>: <span class=\"hljs-built_in\">string</span>;</span>\n<span class=\"code-line\">};</span>\n<span class=\"code-line code-line-highlight\"> </span>\n<span class=\"code-line code-line-highlight\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">toCacheKey</span>(<span class=\"hljs-params\"><span class=\"hljs-attr\">input</span>: <span class=\"hljs-title class_\">ParsedRoute</span></span>): <span class=\"hljs-built_in\">string</span> {</span>\n<span class=\"code-line code-line-highlight\">  <span class=\"hljs-keyword\">const</span> normalizedPath = input.<span class=\"hljs-property\">path</span>.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/\\/+$/</span>, <span class=\"hljs-string\">''</span>);</span>\n<span class=\"code-line code-line-highlight\">  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`<span class=\"hljs-subst\">${input.method}</span>:<span class=\"hljs-subst\">${normalizedPath}</span>`</span>;</span>\n<span class=\"code-line code-line-highlight\">}</span>\n<span class=\"code-line\"> </span></code></pre></div>\n<h2 id=\"sql-cte--json\">SQL (CTE + JSON)</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">WITH</span> active_users <span class=\"hljs-keyword\">AS</span> (\n  <span class=\"hljs-keyword\">SELECT</span> id, email, metadata\n  <span class=\"hljs-keyword\">FROM</span> users\n  <span class=\"hljs-keyword\">WHERE</span> active <span class=\"hljs-operator\">=</span> <span class=\"hljs-literal\">true</span>\n),\nuser_stats <span class=\"hljs-keyword\">AS</span> (\n  <span class=\"hljs-keyword\">SELECT</span>\n    id,\n    email,\n    metadata<span class=\"hljs-operator\">-</span><span class=\"hljs-operator\">&gt;&gt;</span><span class=\"hljs-string\">'plan'</span> <span class=\"hljs-keyword\">AS</span> plan,\n    jsonb_array_length(<span class=\"hljs-built_in\">COALESCE</span>(metadata<span class=\"hljs-operator\">-</span><span class=\"hljs-operator\">&gt;</span><span class=\"hljs-string\">'roles'</span>, <span class=\"hljs-string\">'[]'</span>::jsonb)) <span class=\"hljs-keyword\">AS</span> role_count\n  <span class=\"hljs-keyword\">FROM</span> active_users\n)\n<span class=\"hljs-keyword\">SELECT</span> <span class=\"hljs-operator\">*</span>\n<span class=\"hljs-keyword\">FROM</span> user_stats\n<span class=\"hljs-keyword\">WHERE</span> role_count <span class=\"hljs-operator\">&gt;</span> <span class=\"hljs-number\">0</span>\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> email <span class=\"hljs-keyword\">ASC</span>;\n</code></pre></div>\n<h2 id=\"dockerfile-multi-stage\">Dockerfile (Multi-stage)</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">DOCKERFILE</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-dockerfile\"><span class=\"hljs-keyword\">FROM</span> node:<span class=\"hljs-number\">22</span>-alpine AS deps\n<span class=\"hljs-keyword\">WORKDIR</span><span class=\"language-bash\"> /app</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> package*.json ./</span>\n<span class=\"hljs-keyword\">RUN</span><span class=\"language-bash\"> npm ci</span>\n\n<span class=\"hljs-keyword\">FROM</span> node:<span class=\"hljs-number\">22</span>-alpine AS build\n<span class=\"hljs-keyword\">WORKDIR</span><span class=\"language-bash\"> /app</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> --from=deps /app/node_modules ./node_modules</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> . .</span>\n<span class=\"hljs-keyword\">RUN</span><span class=\"language-bash\"> npm run build</span>\n\n<span class=\"hljs-keyword\">FROM</span> nginx:alpine AS runtime\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> --from=build /app/dist /usr/share/nginx/html</span>\n<span class=\"hljs-keyword\">EXPOSE</span> <span class=\"hljs-number\">80</span>\n<span class=\"hljs-keyword\">CMD</span><span class=\"language-bash\"> [<span class=\"hljs-string\">\"nginx\"</span>, <span class=\"hljs-string\">\"-g\"</span>, <span class=\"hljs-string\">\"daemon off;\"</span>]</span>\n</code></pre></div>\n<h2 id=\"graphql--fragments\">GraphQL + Fragments</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GRAPHQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-graphql\"><span class=\"hljs-keyword\">fragment</span> PageCore <span class=\"hljs-keyword\">on</span> Page <span class=\"hljs-punctuation\">{</span>\n  slug\n  title\n  description\n<span class=\"hljs-punctuation\">}</span>\n\n<span class=\"hljs-keyword\">query</span> SearchPages<span class=\"hljs-punctuation\">(</span><span class=\"hljs-variable\">$query</span>: String<span class=\"hljs-punctuation\">!</span>, <span class=\"hljs-variable\">$limit</span>: Int <span class=\"hljs-punctuation\">=</span> <span class=\"hljs-number\">10</span><span class=\"hljs-punctuation\">)</span> <span class=\"hljs-punctuation\">{</span>\n  searchPages<span class=\"hljs-punctuation\">(</span><span class=\"hljs-symbol\">query</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-variable\">$query</span>, <span class=\"hljs-symbol\">limit</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-variable\">$limit</span>) <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-punctuation\">...</span>PageCore\n    updatedAt\n    score\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>\n<h2 id=\"rust--lifetimes\">Rust + Lifetimes</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">RUST</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-rust\"><span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">pick_longer</span>&lt;<span class=\"hljs-symbol\">'a</span>&gt;(left: &amp;<span class=\"hljs-symbol\">'a</span> <span class=\"hljs-type\">str</span>, right: &amp;<span class=\"hljs-symbol\">'a</span> <span class=\"hljs-type\">str</span>) <span class=\"hljs-punctuation\">-&gt;</span> &amp;<span class=\"hljs-symbol\">'a</span> <span class=\"hljs-type\">str</span> {\n    <span class=\"hljs-keyword\">if</span> left.<span class=\"hljs-title function_ invoke__\">len</span>() &gt;= right.<span class=\"hljs-title function_ invoke__\">len</span>() { left } <span class=\"hljs-keyword\">else</span> { right }\n}\n\n<span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">main</span>() {\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">a</span> = <span class=\"hljs-type\">String</span>::<span class=\"hljs-title function_ invoke__\">from</span>(<span class=\"hljs-string\">\"docline\"</span>);\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">b</span> = <span class=\"hljs-string\">\"docs\"</span>;\n    <span class=\"hljs-built_in\">println!</span>(<span class=\"hljs-string\">\"{}\"</span>, <span class=\"hljs-title function_ invoke__\">pick_longer</span>(&amp;a, b));\n}\n</code></pre></div>\n<h2 id=\"codegroup-same-config-in-3-formats\">CodeGroup: Same Config in 3 Formats</h2>\n<div class=\"code-group\"><div class=\"code-group-tabs\"><button type=\"button\" class=\"code-group-tab active\" data-index=\"0\">config.yaml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"1\">config.toml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"2\">config.ini</button><button type=\"button\" class=\"code-group-copy\" title=\"Copy\">Copy</button></div><div class=\"code-group-panel\" style=\"display: block;\"><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">service:</span>\n  <span class=\"hljs-attr\">name:</span> <span class=\"hljs-string\">docline</span>\n  <span class=\"hljs-attr\">retry:</span>\n    <span class=\"hljs-attr\">maxAttempts:</span> <span class=\"hljs-number\">3</span>\n    <span class=\"hljs-attr\">backoffMs:</span> <span class=\"hljs-number\">250</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-toml\"><span class=\"hljs-section\">[service]</span>\n<span class=\"hljs-attr\">name</span> = <span class=\"hljs-string\">\"docline\"</span>\n\n<span class=\"hljs-section\">[service.retry]</span>\n<span class=\"hljs-attr\">maxAttempts</span> = <span class=\"hljs-number\">3</span>\n<span class=\"hljs-attr\">backoffMs</span> = <span class=\"hljs-number\">250</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-ini\"><span class=\"hljs-section\">[service]</span>\n<span class=\"hljs-attr\">name</span>=docline\n<span class=\"hljs-attr\">maxAttempts</span>=<span class=\"hljs-number\">3</span>\n<span class=\"hljs-attr\">backoffMs</span>=<span class=\"hljs-number\">250</span>\n</code></pre></div></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "javascript-regex--template-literals",
+            "text": "JavaScript (Regex + Template Literals)"
+          },
+          {
+            "level": 2,
+            "id": "line-highlight--filename-demo",
+            "text": "Line Highlight + Filename Demo"
+          },
+          {
+            "level": 2,
+            "id": "sql-cte--json",
+            "text": "SQL (CTE + JSON)"
+          },
+          {
+            "level": 2,
+            "id": "dockerfile-multi-stage",
+            "text": "Dockerfile (Multi-stage)"
+          },
+          {
+            "level": 2,
+            "id": "graphql--fragments",
+            "text": "GraphQL + Fragments"
+          },
+          {
+            "level": 2,
+            "id": "rust--lifetimes",
+            "text": "Rust + Lifetimes"
+          },
+          {
+            "level": 2,
+            "id": "codegroup-same-config-in-3-formats",
+            "text": "CodeGroup: Same Config in 3 Formats"
+          }
+        ],
+        "wordCount": 402,
+        "readingMinutes": 2,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "section": "Getting Started",
+        "sourceFile": "docs/v1/en/advanced-highlight-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:29:24.899Z",
+        "contentHash": "9d8906f377104f9e",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Advanced Highlight Demo",
+          "description": "Stress-test page for syntax highlighting quality across complex grammars."
+        },
+        "plainText": "Advanced Highlight Demo Stress-test page for syntax highlighting quality across complex grammars. JavaScript (Regex + Template Literals) JS Copy const routePattern = /^(?&lt;method&gt;GET|POST|PATCH)\\s+(?&lt;path&gt;\\/api\\/[\\w/-]+)$/i ; export function parseRoute ( input ) { const match = routePattern. exec (input?. trim () || '' ); if (!match?. groups ) throw new Error ( `Invalid route: ${input} ` ); const { method, path } = match. groups ; return { method, path, cacheKey : ` ${method} : ${path} ` , }; } Line Highlight + Filename Demo src/lib/route-parser.ts Copy type ParsedRoute = { method : 'GET' | 'POST' | 'PATCH' ; path : string ; cacheKey : string ; }; export function toCacheKey ( input : ParsedRoute ): string { const normalizedPath = input. path . replace ( /\\/+$/ , '' ); return ` ${input.method} : ${normalizedPath} ` ; } SQL (CTE + JSON) SQL Copy WITH active_users AS ( SELECT id, email, metadata FROM users WHERE active = true ), user_stats AS ( SELECT id, email, metadata - &gt;&gt; 'plan' AS plan, jsonb_array_length( COALESCE (metadata - &gt; 'roles' , '[]' ::jsonb)) AS role_count FROM active_users ) SELECT * FROM user_stats WHERE role_count &gt; 0 ORDER BY email ASC ; Dockerfile (Multi-stage) DOCKERFILE Copy FROM node: 22 -alpine AS deps WORKDIR /app COPY package*.json ./ RUN npm ci FROM node: 22 -alpine AS build WORKDIR /app COPY --from=deps /app/node_modules ./node_modules COPY . . RUN npm run build FROM nginx:alpine AS runtime COPY --from=build /app/dist /usr/share/nginx/html EXPOSE 80 CMD [ \"nginx\" , \"-g\" , \"daemon off;\" ] GraphQL + Fragments GRAPHQL Copy fragment PageCore on Page { slug title description } query SearchPages ( $query : String ! , $limit : Int = 10 ) { searchPages ( query : $query , limit : $limit ) { ... PageCore updatedAt score } } Rust + Lifetimes RUST Copy fn pick_longer &lt; 'a &gt;(left: &amp; 'a str , right: &amp; 'a str ) -&gt; &amp; 'a str { if left. len () &gt;= right. len () { left } else { right } } fn main () { let a = String :: from ( \"docline\" ); let b = \"docs\" ; println! ( \"{}\" , pick_longer (&amp;a, b)); } CodeGroup: Same Config in 3 Formats config.yaml config.toml config.ini Copy service: name: docline retry: maxAttempts: 3 backoffMs: 250 [service] name = \"docline\" [service.retry] maxAttempts = 3 backoffMs = 250 [service] name =docline maxAttempts = 3 backoffMs = 250"
+      }
+    },
+    "v1:es": {
+      "introduction": {
+        "slug": "introduction",
+        "title": "Introducción",
+        "description": "Bienvenido a la documentación en Español de docline v1.",
+        "html": "<h1 id=\"introducción\">Introducción</h1>\n<p>docline compila MDX a HTML estático en build time y genera un índice de búsqueda estático.</p>\n<div class=\"callout callout-tip\"><p>Esta página usa componentes MDX reales compilados en build.</p></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "introducción",
+            "text": "Introducción"
+          }
+        ],
+        "wordCount": 36,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/introduction.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.994Z",
+        "contentHash": "752afb57fbac906f",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Introducción",
+          "description": "Bienvenido a la documentación en Español de docline v1."
+        },
+        "plainText": "Introducción Bienvenido a la documentación en Español de docline v1. Introducción docline compila MDX a HTML estático en build time y genera un índice de búsqueda estático. Esta página usa componentes MDX reales compilados en build."
+      },
+      "quickstart": {
+        "slug": "quickstart",
+        "title": "Inicio rápido",
+        "description": "Cómo ejecutar docline localmente.",
+        "html": "<h1 id=\"inicio-rápido\">Inicio rápido</h1>\n<ol>\n<li>Ejecuta <code>npm install</code>.</li>\n<li>Ejecuta <code>npm run docs:compile</code>.</li>\n<li>Ejecuta <code>npm run dev</code>.</li>\n</ol>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "inicio-rápido",
+            "text": "Inicio rápido"
+          }
+        ],
+        "wordCount": 22,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/quickstart.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.995Z",
+        "contentHash": "556dca571f51893a",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Inicio rápido",
+          "description": "Cómo ejecutar docline localmente."
+        },
+        "plainText": "Inicio rápido Cómo ejecutar docline localmente. Inicio rápido Ejecuta npm install . Ejecuta npm run docs:compile . Ejecuta npm run dev ."
+      },
+      "components": {
+        "slug": "components",
+        "title": "Componentes",
+        "description": "Componentes MDX integrados.",
+        "html": "<h1 id=\"componentes\">Componentes</h1>\n<div class=\"callout callout-note\">Puedes usar <code>Card</code>, <code>Steps</code>, <code>Accordion</code>, <code>Tabs</code>, <code>Columns</code> y más.</div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "componentes",
+            "text": "Componentes"
+          }
+        ],
+        "wordCount": 18,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/components.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:31.995Z",
+        "contentHash": "663b983fa2fe3201",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Componentes",
+          "description": "Componentes MDX integrados."
+        },
+        "plainText": "Componentes Componentes MDX integrados. Componentes Puedes usar Card , Steps , Accordion , Tabs , Columns y más."
+      },
+      "syntax-showcase": {
+        "slug": "syntax-showcase",
+        "title": "Demo de Sintaxis",
+        "description": "Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline.",
+        "html": "<h2 id=\"json-de-api\">JSON de API</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"id\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"usr_2048\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"email\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"usuario@ejemplo.com\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"roles\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">[</span><span class=\"hljs-string\">\"admin\"</span><span class=\"hljs-punctuation\">,</span> <span class=\"hljs-string\">\"editor\"</span><span class=\"hljs-punctuation\">]</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"active\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">true</span></span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>\n<h2 id=\"typescript\">TypeScript</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">TS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-ts\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">interface</span> <span class=\"hljs-title class_\">Session</span> {\n  <span class=\"hljs-attr\">id</span>: <span class=\"hljs-built_in\">string</span>;\n  <span class=\"hljs-attr\">locale</span>: <span class=\"hljs-string\">'es'</span> | <span class=\"hljs-string\">'en'</span>;\n  <span class=\"hljs-attr\">expiresAt</span>: <span class=\"hljs-built_in\">string</span>;\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isExpired</span> = (<span class=\"hljs-params\"><span class=\"hljs-attr\">session</span>: <span class=\"hljs-title class_\">Session</span>, <span class=\"hljs-attr\">now</span>: <span class=\"hljs-built_in\">string</span></span>) =&gt; now &gt; session.<span class=\"hljs-property\">expiresAt</span>;\n</code></pre></div>\n<h2 id=\"python\">Python</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">PYTHON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-python\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">saludar</span>(<span class=\"hljs-params\">nombre: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">f\"hola, <span class=\"hljs-subst\">{nombre}</span>\"</span>\n\n<span class=\"hljs-built_in\">print</span>(saludar(<span class=\"hljs-string\">\"equipo\"</span>))\n</code></pre></div>\n<h2 id=\"bash\">Bash</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">BASH</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-bash\"><span class=\"hljs-meta\">#!/usr/bin/env bash</span>\n<span class=\"hljs-built_in\">set</span> -euo pipefail\n\n<span class=\"hljs-built_in\">echo</span> <span class=\"hljs-string\">\"compilando docs...\"</span>\nnpm run build\n</code></pre></div>\n<h2 id=\"sql\">SQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">SELECT</span> slug, title\n<span class=\"hljs-keyword\">FROM</span> pages\n<span class=\"hljs-keyword\">WHERE</span> locale <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">'es'</span>\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> title <span class=\"hljs-keyword\">ASC</span>;\n</code></pre></div>\n<h2 id=\"yaml\">YAML</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">YAML</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">build:</span>\n  <span class=\"hljs-attr\">command:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">run</span> <span class=\"hljs-string\">build</span>\n  <span class=\"hljs-attr\">output:</span> <span class=\"hljs-string\">dist</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "json-de-api",
+            "text": "JSON de API"
+          },
+          {
+            "level": 2,
+            "id": "typescript",
+            "text": "TypeScript"
+          },
+          {
+            "level": 2,
+            "id": "python",
+            "text": "Python"
+          },
+          {
+            "level": 2,
+            "id": "bash",
+            "text": "Bash"
+          },
+          {
+            "level": 2,
+            "id": "sql",
+            "text": "SQL"
+          },
+          {
+            "level": 2,
+            "id": "yaml",
+            "text": "YAML"
+          }
+        ],
+        "wordCount": 142,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/syntax-showcase.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.955Z",
+        "contentHash": "7d2b985642ace5b5",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo de Sintaxis",
+          "description": "Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline."
+        },
+        "plainText": "Demo de Sintaxis Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline. JSON de API JSON Copy { \"id\" : \"usr_2048\" , \"email\" : \"usuario@ejemplo.com\" , \"roles\" : [ \"admin\" , \"editor\" ] , \"active\" : true } TypeScript TS Copy export interface Session { id : string ; locale : 'es' | 'en' ; expiresAt : string ; } export const isExpired = ( session : Session , now : string ) =&gt; now &gt; session. expiresAt ; Python PYTHON Copy def saludar ( nombre: str ) -&gt; str : return f\"hola, {nombre} \" print (saludar( \"equipo\" )) Bash BASH Copy #!/usr/bin/env bash set -euo pipefail echo \"compilando docs...\" npm run build SQL SQL Copy SELECT slug, title FROM pages WHERE locale = 'es' ORDER BY title ASC ; YAML YAML Copy build: command: npm run build output: dist"
+      },
+      "code-ux-demo": {
+        "slug": "code-ux-demo",
+        "title": "Demo UX de Codigo",
+        "description": "Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo.",
+        "html": "<h2 id=\"endpoint-rapido-pestanas\">Endpoint Rapido (Pestanas)</h2>\n<div class=\"tabs-container\"><div class=\"tabs-nav\"><button type=\"button\" class=\"tabs-nav-btn active\" data-index=\"0\">curl</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"1\">JavaScript</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"2\">Python</button><button type=\"button\" class=\"tabs-copy-btn\" title=\"Copy\">Copy</button></div><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"curl\" style=\"display: block;\"><pre><code class=\"hljs language-bash\">curl -X GET <span class=\"hljs-string\">\"https://api.example.com/v1/projects?limit=20\"</span> \\\n  -H <span class=\"hljs-string\">\"Authorization: Bearer <span class=\"hljs-variable\">$DOCS_TOKEN</span>\"</span>\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"JavaScript\" style=\"display: none;\"><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> resp = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">fetch</span>(<span class=\"hljs-string\">'https://api.example.com/v1/projects?limit=20'</span>, {\n  <span class=\"hljs-attr\">headers</span>: { <span class=\"hljs-title class_\">Authorization</span>: <span class=\"hljs-string\">`Bearer <span class=\"hljs-subst\">${process.env.DOCS_TOKEN}</span>`</span> },\n});\n\n<span class=\"hljs-keyword\">const</span> projects = <span class=\"hljs-keyword\">await</span> resp.<span class=\"hljs-title function_\">json</span>();\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(projects.<span class=\"hljs-property\">length</span>);\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"Python\" style=\"display: none;\"><pre><code class=\"hljs language-python\"><span class=\"hljs-keyword\">import</span> requests\n\nresp = requests.get(\n    <span class=\"hljs-string\">\"https://api.example.com/v1/projects?limit=20\"</span>,\n    headers={<span class=\"hljs-string\">\"Authorization\"</span>: <span class=\"hljs-string\">f\"Bearer <span class=\"hljs-subst\">{DOCS_TOKEN}</span>\"</span>},\n)\n\n<span class=\"hljs-built_in\">print</span>(<span class=\"hljs-built_in\">len</span>(resp.json()))\n</code></pre></section></div>\n<h2 id=\"configuracion-codegroup\">Configuracion (CodeGroup)</h2>\n<div class=\"code-group\"><div class=\"code-group-tabs\"><button type=\"button\" class=\"code-group-tab active\" data-index=\"0\">app.yaml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"1\">app.json</button><button type=\"button\" class=\"code-group-copy\" title=\"Copy\">Copy</button></div><div class=\"code-group-panel\" style=\"display: block;\"><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">feature_flags:</span>\n  <span class=\"hljs-attr\">docs_search:</span> <span class=\"hljs-literal\">true</span>\n  <span class=\"hljs-attr\">ai_assistant:</span> <span class=\"hljs-literal\">false</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"feature_flags\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-attr\">\"docs_search\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">true</span></span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"ai_assistant\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">false</span></span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div></div>\n<h2 id=\"sql\">SQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">SELECT</span> slug, title\n<span class=\"hljs-keyword\">FROM</span> pages\n<span class=\"hljs-keyword\">WHERE</span> locale <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">'es'</span>\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> title;\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "endpoint-rapido-pestanas",
+            "text": "Endpoint Rapido (Pestanas)"
+          },
+          {
+            "level": 2,
+            "id": "configuracion-codegroup",
+            "text": "Configuracion (CodeGroup)"
+          },
+          {
+            "level": 2,
+            "id": "sql",
+            "text": "SQL"
+          }
+        ],
+        "wordCount": 121,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/code-ux-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.977Z",
+        "contentHash": "886ab3650540e388",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo UX de Codigo",
+          "description": "Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo."
+        },
+        "plainText": "Demo UX de Codigo Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo. Endpoint Rapido (Pestanas) curl JavaScript Python Copy curl -X GET \"https://api.example.com/v1/projects?limit=20\" \\ -H \"Authorization: Bearer $DOCS_TOKEN \" const resp = await fetch ( 'https://api.example.com/v1/projects?limit=20' , { headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` }, }); const projects = await resp. json (); console . log (projects. length ); import requests resp = requests.get( \"https://api.example.com/v1/projects?limit=20\" , headers={ \"Authorization\" : f\"Bearer {DOCS_TOKEN} \" }, ) print ( len (resp.json())) Configuracion (CodeGroup) app.yaml app.json Copy feature_flags: docs_search: true ai_assistant: false { \"feature_flags\" : { \"docs_search\" : true , \"ai_assistant\" : false } } SQL SQL Copy SELECT slug, title FROM pages WHERE locale = 'es' ORDER BY title;"
+      },
+      "advanced-highlight-demo": {
+        "slug": "advanced-highlight-demo",
+        "title": "Demo Avanzado de Resaltado",
+        "description": "Pagina de prueba con gramaticas complejas para validar calidad de resaltado.",
+        "html": "<h2 id=\"javascript\">JavaScript</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> token = process.<span class=\"hljs-property\">env</span>.<span class=\"hljs-property\">DOCS_TOKEN</span> ?? <span class=\"hljs-string\">'dev-token'</span>;\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">safe</span> = (<span class=\"hljs-params\">value</span>) =&gt; <span class=\"hljs-title class_\">String</span>(value).<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/[&lt;&gt;\"']/g</span>, <span class=\"hljs-string\">'_'</span>);\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">`token-length=<span class=\"hljs-subst\">${safe(token).length}</span>`</span>);\n</code></pre></div>\n<h2 id=\"sql\">SQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">SELECT</span> p.slug, p.title, c.locale\n<span class=\"hljs-keyword\">FROM</span> pages p\n<span class=\"hljs-keyword\">JOIN</span> contexts c <span class=\"hljs-keyword\">ON</span> c.id <span class=\"hljs-operator\">=</span> p.context_id\n<span class=\"hljs-keyword\">WHERE</span> c.version <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">'v2'</span>\n  <span class=\"hljs-keyword\">AND</span> c.locale <span class=\"hljs-keyword\">IN</span> (<span class=\"hljs-string\">'es'</span>, <span class=\"hljs-string\">'en'</span>)\n<span class=\"hljs-keyword\">ORDER</span> <span class=\"hljs-keyword\">BY</span> p.updated_at <span class=\"hljs-keyword\">DESC</span>\nLIMIT <span class=\"hljs-number\">25</span>;\n</code></pre></div>\n<h2 id=\"dockerfile\">Dockerfile</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">DOCKERFILE</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-dockerfile\"><span class=\"hljs-keyword\">FROM</span> python:<span class=\"hljs-number\">3.13</span>-slim\n<span class=\"hljs-keyword\">WORKDIR</span><span class=\"language-bash\"> /app</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> requirements.txt ./</span>\n<span class=\"hljs-keyword\">RUN</span><span class=\"language-bash\"> pip install --no-cache-dir -r requirements.txt</span>\n<span class=\"hljs-keyword\">COPY</span><span class=\"language-bash\"> . .</span>\n<span class=\"hljs-keyword\">CMD</span><span class=\"language-bash\"> [<span class=\"hljs-string\">\"python\"</span>, <span class=\"hljs-string\">\"main.py\"</span>]</span>\n</code></pre></div>\n<h2 id=\"graphql\">GraphQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GRAPHQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-graphql\"><span class=\"hljs-keyword\">query</span> PageBySlug<span class=\"hljs-punctuation\">(</span><span class=\"hljs-variable\">$slug</span>: String<span class=\"hljs-punctuation\">!</span><span class=\"hljs-punctuation\">)</span> <span class=\"hljs-punctuation\">{</span>\n  page<span class=\"hljs-punctuation\">(</span><span class=\"hljs-symbol\">slug</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-variable\">$slug</span>) <span class=\"hljs-punctuation\">{</span>\n    slug\n    title\n    blocks <span class=\"hljs-punctuation\">{</span>\n      __typename\n      <span class=\"hljs-punctuation\">...</span> <span class=\"hljs-keyword\">on</span> CodeBlock <span class=\"hljs-punctuation\">{</span>\n        language\n        code\n      <span class=\"hljs-punctuation\">}</span>\n    <span class=\"hljs-punctuation\">}</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "javascript",
+            "text": "JavaScript"
+          },
+          {
+            "level": 2,
+            "id": "sql",
+            "text": "SQL"
+          },
+          {
+            "level": 2,
+            "id": "dockerfile",
+            "text": "Dockerfile"
+          },
+          {
+            "level": 2,
+            "id": "graphql",
+            "text": "GraphQL"
+          }
+        ],
+        "wordCount": 148,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "section": "Comenzar",
+        "sourceFile": "docs/v1/es/advanced-highlight-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:12:52.356Z",
+        "contentHash": "acb497a8a9eb6b05",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo Avanzado de Resaltado",
+          "description": "Pagina de prueba con gramaticas complejas para validar calidad de resaltado."
+        },
+        "plainText": "Demo Avanzado de Resaltado Pagina de prueba con gramaticas complejas para validar calidad de resaltado. JavaScript JS Copy const token = process. env . DOCS_TOKEN ?? 'dev-token' ; const safe = ( value ) =&gt; String (value). replace ( /[&lt;&gt;\"']/g , '_' ); console . log ( `token-length= ${safe(token).length} ` ); SQL SQL Copy SELECT p.slug, p.title, c.locale FROM pages p JOIN contexts c ON c.id = p.context_id WHERE c.version = 'v2' AND c.locale IN ( 'es' , 'en' ) ORDER BY p.updated_at DESC LIMIT 25 ; Dockerfile DOCKERFILE Copy FROM python: 3.13 -slim WORKDIR /app COPY requirements.txt ./ RUN pip install --no-cache-dir -r requirements.txt COPY . . CMD [ \"python\" , \"main.py\" ] GraphQL GRAPHQL Copy query PageBySlug ( $slug : String ! ) { page ( slug : $slug ) { slug title blocks { __typename ... on CodeBlock { language code } } } }"
+      }
+    },
+    "v2:en": {
+      "introduction": {
+        "slug": "introduction",
+        "title": "Introduction (v2)",
+        "description": "docline v2 focuses on multi-locale + versioned docs.",
+        "html": "<h1 id=\"introduction\">Introduction</h1>\n<p>Version <code>v2</code> demonstrates the versioning switcher with static pages.</p>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "introduction",
+            "text": "Introduction"
+          }
+        ],
+        "wordCount": 20,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/introduction.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:32.005Z",
+        "contentHash": "07adede9164079ed",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Introduction (v2)",
+          "description": "docline v2 focuses on multi-locale + versioned docs."
+        },
+        "plainText": "Introduction (v2) docline v2 focuses on multi-locale + versioned docs. Introduction Version v2 demonstrates the versioning switcher with static pages."
+      },
+      "quickstart": {
+        "slug": "quickstart",
+        "title": "Quickstart (v2)",
+        "description": "Updated setup for v2 docs.",
+        "html": "<h1 id=\"quickstart\">Quickstart</h1>\n<div class=\"callout callout-tip\"><p style=\"margin-top:0;font-weight:700\">New in v2</p><p>Use context switches in the header to move between versions and languages.</p></div>\n<h2 id=\"auth-header\">Auth header</h2>\n<p>Use this standard header in all examples:</p>\n<p><code>Authorization: Bearer &lt;token&gt;</code></p>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "quickstart",
+            "text": "Quickstart"
+          },
+          {
+            "level": 2,
+            "id": "auth-header",
+            "text": "Auth header"
+          }
+        ],
+        "wordCount": 35,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/quickstart.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:47:34.656Z",
+        "contentHash": "51c4e483beab6486",
+        "includesUsed": [
+          "api.authHeader"
+        ],
+        "frontmatter": {
+          "title": "Quickstart (v2)",
+          "description": "Updated setup for v2 docs."
+        },
+        "plainText": "Quickstart (v2) Updated setup for v2 docs. Quickstart New in v2 Use context switches in the header to move between versions and languages. Auth header Use this standard header in all examples: Authorization: Bearer &lt;token&gt;"
+      },
+      "components": {
+        "slug": "components",
+        "title": "Components (v2)",
+        "description": "Same MDX component model across versions.",
+        "html": "<h1 id=\"components\">Components</h1>\n<div class=\"tabs-container\"><div class=\"tabs-nav\"><button type=\"button\" class=\"tabs-nav-btn active\" data-index=\"0\">Card</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"1\">Accordion</button><button type=\"button\" class=\"tabs-copy-btn\" title=\"Copy\">Copy</button></div><section class=\"tabs-panel\" data-tab-title=\"Card\" style=\"display: block;\"><div class=\"card\"><p style=\"font-weight:700;margin-bottom:0.4rem\">Version-safe components</p><p>Components are rendered at build time into static HTML.</p></div></section><section class=\"tabs-panel\" data-tab-title=\"Accordion\" style=\"display: none;\"><details class=\"accordion\"><summary>Why this matters</summary>No runtime regex parser required.</details></section></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "components",
+            "text": "Components"
+          }
+        ],
+        "wordCount": 31,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/components.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:32.010Z",
+        "contentHash": "1e4ed08298385247",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Components (v2)",
+          "description": "Same MDX component model across versions."
+        },
+        "plainText": "Components (v2) Same MDX component model across versions. Components Card Accordion Copy Version-safe components Components are rendered at build time into static HTML. Why this matters No runtime regex parser required."
+      },
+      "syntax-showcase": {
+        "slug": "syntax-showcase",
+        "title": "Syntax Showcase",
+        "description": "v2 dummy page to validate language coverage and code rendering quality.",
+        "html": "<h2 id=\"terraform\">Terraform</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">ABNF</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-abnf\">resource <span class=\"hljs-string\">\"aws_s3_bucket\"</span> <span class=\"hljs-string\">\"docs\"</span> {\n  bucket <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"docline-assets-prod\"</span>\n\n  tags <span class=\"hljs-operator\">=</span> {\n    Environment <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"prod\"</span>\n    Team        <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"docs\"</span>\n  }\n}\n</code></pre></div>\n<h2 id=\"kotlin\">Kotlin</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">KOTLIN</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-kotlin\"><span class=\"hljs-keyword\">data</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">FeatureFlag</span>(\n  <span class=\"hljs-keyword\">val</span> key: String,\n  <span class=\"hljs-keyword\">val</span> enabled: <span class=\"hljs-built_in\">Boolean</span>\n)\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">fun</span> <span class=\"hljs-title\">isEnabled</span><span class=\"hljs-params\">(flag: <span class=\"hljs-type\">FeatureFlag</span>)</span></span>: <span class=\"hljs-built_in\">Boolean</span> = flag.enabled\n</code></pre></div>\n<h2 id=\"c\">C#</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">CSHARP</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-csharp\"><span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">record</span> <span class=\"hljs-title\">Tenant</span>(<span class=\"hljs-params\"><span class=\"hljs-built_in\">string</span> Id, <span class=\"hljs-built_in\">string</span> Name</span>)</span>;\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-built_in\">bool</span> <span class=\"hljs-title\">IsValid</span>(<span class=\"hljs-params\">Tenant tenant</span>)</span>\n{\n    <span class=\"hljs-keyword\">return</span> !<span class=\"hljs-built_in\">string</span>.IsNullOrWhiteSpace(tenant.Id);\n}\n</code></pre></div>\n<h2 id=\"graphql\">GraphQL</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GRAPHQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-graphql\"><span class=\"hljs-keyword\">query</span> DocsPage<span class=\"hljs-punctuation\">(</span><span class=\"hljs-variable\">$slug</span>: String<span class=\"hljs-punctuation\">!</span><span class=\"hljs-punctuation\">)</span> <span class=\"hljs-punctuation\">{</span>\n  page<span class=\"hljs-punctuation\">(</span><span class=\"hljs-symbol\">slug</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-variable\">$slug</span>) <span class=\"hljs-punctuation\">{</span>\n    title\n    description\n    updatedAt\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>\n<h2 id=\"toml\">TOML</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">TOML</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-toml\"><span class=\"hljs-section\">[docs]</span>\n<span class=\"hljs-attr\">name</span> = <span class=\"hljs-string\">\"docline\"</span>\n<span class=\"hljs-attr\">version</span> = <span class=\"hljs-string\">\"2.0\"</span>\n<span class=\"hljs-attr\">multilingual</span> = <span class=\"hljs-literal\">true</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "terraform",
+            "text": "Terraform"
+          },
+          {
+            "level": 2,
+            "id": "kotlin",
+            "text": "Kotlin"
+          },
+          {
+            "level": 2,
+            "id": "c",
+            "text": "C#"
+          },
+          {
+            "level": 2,
+            "id": "graphql",
+            "text": "GraphQL"
+          },
+          {
+            "level": 2,
+            "id": "toml",
+            "text": "TOML"
+          }
+        ],
+        "wordCount": 121,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/syntax-showcase.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.966Z",
+        "contentHash": "e2e3aa9a83158e04",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Syntax Showcase",
+          "description": "v2 dummy page to validate language coverage and code rendering quality."
+        },
+        "plainText": "Syntax Showcase v2 dummy page to validate language coverage and code rendering quality. Terraform ABNF Copy resource \"aws_s3_bucket\" \"docs\" { bucket = \"docline-assets-prod\" tags = { Environment = \"prod\" Team = \"docs\" } } Kotlin KOTLIN Copy data class FeatureFlag ( val key: String, val enabled: Boolean ) fun isEnabled (flag: FeatureFlag ) : Boolean = flag.enabled C# CSHARP Copy public record Tenant ( string Id, string Name ) ; public static bool IsValid ( Tenant tenant ) { return ! string .IsNullOrWhiteSpace(tenant.Id); } GraphQL GRAPHQL Copy query DocsPage ( $slug : String ! ) { page ( slug : $slug ) { title description updatedAt } } TOML TOML Copy [docs] name = \"docline\" version = \"2.0\" multilingual = true"
+      },
+      "code-ux-demo": {
+        "slug": "code-ux-demo",
+        "title": "Code UX Demo",
+        "description": "v2 code experience demo with tabs, groups, and mixed language samples.",
+        "html": "<h2 id=\"infrastructure-snippets\">Infrastructure Snippets</h2>\n<div class=\"tabs-container\"><div class=\"tabs-nav\"><button type=\"button\" class=\"tabs-nav-btn active\" data-index=\"0\">Terraform</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"1\">Pulumi TS</button><button type=\"button\" class=\"tabs-copy-btn\" title=\"Copy\">Copy</button></div><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"Terraform\" style=\"display: block;\"><pre><code class=\"hljs language-abnf\">resource <span class=\"hljs-string\">\"aws_sqs_queue\"</span> <span class=\"hljs-string\">\"events\"</span> {\n  name                      <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"docline-events\"</span>\n  message_retention_seconds <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">345600</span>\n}\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"Pulumi TS\" style=\"display: none;\"><pre><code class=\"hljs language-ts\"><span class=\"hljs-keyword\">import</span> * <span class=\"hljs-keyword\">as</span> aws <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'@pulumi/aws'</span>;\n\n<span class=\"hljs-keyword\">const</span> queue = <span class=\"hljs-keyword\">new</span> aws.<span class=\"hljs-property\">sqs</span>.<span class=\"hljs-title class_\">Queue</span>(<span class=\"hljs-string\">'docline-events'</span>, {\n  <span class=\"hljs-attr\">messageRetentionSeconds</span>: <span class=\"hljs-number\">345600</span>,\n});\n</code></pre></section></div>\n<h2 id=\"runtime-config\">Runtime Config</h2>\n<div class=\"code-group\"><div class=\"code-group-tabs\"><button type=\"button\" class=\"code-group-tab active\" data-index=\"0\">app.ini</button><button type=\"button\" class=\"code-group-tab\" data-index=\"1\">app.toml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"2\">app.yaml</button><button type=\"button\" class=\"code-group-copy\" title=\"Copy\">Copy</button></div><div class=\"code-group-panel\" style=\"display: block;\"><pre><code class=\"hljs language-ini\"><span class=\"hljs-section\">[service]</span>\n<span class=\"hljs-attr\">name</span>=docline\n<span class=\"hljs-attr\">region</span>=us-east-<span class=\"hljs-number\">1</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-toml\"><span class=\"hljs-section\">[service]</span>\n<span class=\"hljs-attr\">name</span> = <span class=\"hljs-string\">\"docline\"</span>\n<span class=\"hljs-attr\">region</span> = <span class=\"hljs-string\">\"us-east-1\"</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">service:</span>\n  <span class=\"hljs-attr\">name:</span> <span class=\"hljs-string\">docline</span>\n  <span class=\"hljs-attr\">region:</span> <span class=\"hljs-string\">us-east-1</span>\n</code></pre></div></div>\n<h2 id=\"backend-examples\">Backend Examples</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GO</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-go\"><span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">canPublish</span><span class=\"hljs-params\">(role <span class=\"hljs-type\">string</span>)</span></span> <span class=\"hljs-type\">bool</span> {\n    <span class=\"hljs-keyword\">return</span> role == <span class=\"hljs-string\">\"owner\"</span> || role == <span class=\"hljs-string\">\"editor\"</span>\n}\n</code></pre></div>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">RUST</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-rust\"><span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">can_publish</span>(role: &amp;<span class=\"hljs-type\">str</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">bool</span> {\n    role == <span class=\"hljs-string\">\"owner\"</span> || role == <span class=\"hljs-string\">\"editor\"</span>\n}\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "infrastructure-snippets",
+            "text": "Infrastructure Snippets"
+          },
+          {
+            "level": 2,
+            "id": "runtime-config",
+            "text": "Runtime Config"
+          },
+          {
+            "level": 2,
+            "id": "backend-examples",
+            "text": "Backend Examples"
+          }
+        ],
+        "wordCount": 118,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/code-ux-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.981Z",
+        "contentHash": "ba321e06cfcb8b3e",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Code UX Demo",
+          "description": "v2 code experience demo with tabs, groups, and mixed language samples."
+        },
+        "plainText": "Code UX Demo v2 code experience demo with tabs, groups, and mixed language samples. Infrastructure Snippets Terraform Pulumi TS Copy resource \"aws_sqs_queue\" \"events\" { name = \"docline-events\" message_retention_seconds = 345600 } import * as aws from '@pulumi/aws' ; const queue = new aws. sqs . Queue ( 'docline-events' , { messageRetentionSeconds : 345600 , }); Runtime Config app.ini app.toml app.yaml Copy [service] name =docline region =us-east- 1 [service] name = \"docline\" region = \"us-east-1\" service: name: docline region: us-east-1 Backend Examples GO Copy func canPublish (role string ) bool { return role == \"owner\" || role == \"editor\" } RUST Copy fn can_publish (role: &amp; str ) -&gt; bool { role == \"owner\" || role == \"editor\" }"
+      },
+      "advanced-highlight-demo": {
+        "slug": "advanced-highlight-demo",
+        "title": "Advanced Highlight Demo",
+        "description": "v2 syntax stress page for larger snippets and edge grammars.",
+        "html": "<h2 id=\"typescript-generics\">TypeScript Generics</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">TS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-ts\"><span class=\"hljs-keyword\">type</span> <span class=\"hljs-title class_\">ApiResult</span>&lt;T&gt; = { <span class=\"hljs-attr\">ok</span>: <span class=\"hljs-literal\">true</span>; <span class=\"hljs-attr\">data</span>: T } | { <span class=\"hljs-attr\">ok</span>: <span class=\"hljs-literal\">false</span>; <span class=\"hljs-attr\">error</span>: <span class=\"hljs-built_in\">string</span> };\n\n<span class=\"hljs-keyword\">async</span> <span class=\"hljs-keyword\">function</span> fetchJson&lt;T&gt;(<span class=\"hljs-attr\">url</span>: <span class=\"hljs-built_in\">string</span>): <span class=\"hljs-title class_\">Promise</span>&lt;<span class=\"hljs-title class_\">ApiResult</span>&lt;T&gt;&gt; {\n  <span class=\"hljs-keyword\">try</span> {\n    <span class=\"hljs-keyword\">const</span> res = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">fetch</span>(url);\n    <span class=\"hljs-keyword\">if</span> (!res.<span class=\"hljs-property\">ok</span>) <span class=\"hljs-keyword\">return</span> { <span class=\"hljs-attr\">ok</span>: <span class=\"hljs-literal\">false</span>, <span class=\"hljs-attr\">error</span>: <span class=\"hljs-string\">`HTTP <span class=\"hljs-subst\">${res.status}</span>`</span> };\n    <span class=\"hljs-keyword\">return</span> { <span class=\"hljs-attr\">ok</span>: <span class=\"hljs-literal\">true</span>, <span class=\"hljs-attr\">data</span>: (<span class=\"hljs-keyword\">await</span> res.<span class=\"hljs-title function_\">json</span>()) <span class=\"hljs-keyword\">as</span> T };\n  } <span class=\"hljs-keyword\">catch</span> (error) {\n    <span class=\"hljs-keyword\">return</span> { <span class=\"hljs-attr\">ok</span>: <span class=\"hljs-literal\">false</span>, <span class=\"hljs-attr\">error</span>: <span class=\"hljs-title class_\">String</span>(error) };\n  }\n}\n</code></pre></div>\n<h2 id=\"highlighted-lines-config\">Highlighted Lines (Config)</h2>\n<div class=\"code-block-wrapper has-filename\"><div class=\"code-block-toolbar\"><span class=\"code-filename\">deploy/pipeline.yaml</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre class=\"has-code-lines\"><code class=\"hljs language-yaml has-code-lines\"><span class=\"code-line\"><span class=\"hljs-attr\">pipeline:</span></span>\n<span class=\"code-line code-line-highlight\">  <span class=\"hljs-attr\">name:</span> <span class=\"hljs-string\">docline-release</span></span>\n<span class=\"code-line\">  <span class=\"hljs-attr\">triggers:</span></span>\n<span class=\"code-line\">    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-string\">push</span></span>\n<span class=\"code-line\">  <span class=\"hljs-attr\">steps:</span></span>\n<span class=\"code-line code-line-highlight\">    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">ci</span></span>\n<span class=\"code-line code-line-highlight\">    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">run</span> <span class=\"hljs-string\">build</span></span>\n<span class=\"code-line code-line-highlight\">    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">run</span> <span class=\"hljs-string\">export</span></span>\n<span class=\"code-line\"> </span></code></pre></div>\n<h2 id=\"terraform\">Terraform</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">ABNF</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-abnf\">module <span class=\"hljs-string\">\"docs_cdn\"</span> {\n  source  <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"terraform-aws-modules/cloudfront/aws\"</span>\n  aliases <span class=\"hljs-operator\">=</span> [<span class=\"hljs-string\">\"docs.example.com\"</span>]\n\n  default_cache_behavior <span class=\"hljs-operator\">=</span> {\n    target_origin_id       <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"docs-bucket\"</span>\n    viewer_protocol_policy <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">\"redirect-to-https\"</span>\n  }\n}\n</code></pre></div>\n<h2 id=\"go--interfaces\">Go + Interfaces</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">GO</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-go\"><span class=\"hljs-keyword\">type</span> Logger <span class=\"hljs-keyword\">interface</span> {\n    Info(msg <span class=\"hljs-type\">string</span>, args ...any)\n    Error(msg <span class=\"hljs-type\">string</span>, args ...any)\n}\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Serve</span><span class=\"hljs-params\">(logger Logger)</span></span> {\n    logger.Info(<span class=\"hljs-string\">\"server started\"</span>, <span class=\"hljs-string\">\"port\"</span>, <span class=\"hljs-number\">8080</span>)\n}\n</code></pre></div>\n<h2 id=\"bash--jq\">Bash + jq</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">BASH</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-bash\"><span class=\"hljs-meta\">#!/usr/bin/env bash</span>\n<span class=\"hljs-built_in\">set</span> -euo pipefail\n\ncurl -s <span class=\"hljs-string\">\"https://api.example.com/v2/pages?limit=5\"</span> \\\n  -H <span class=\"hljs-string\">\"Authorization: Bearer <span class=\"hljs-variable\">${DOCS_TOKEN}</span>\"</span> \\\n  | jq <span class=\"hljs-string\">'.items[] | {slug, updatedAt}'</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "typescript-generics",
+            "text": "TypeScript Generics"
+          },
+          {
+            "level": 2,
+            "id": "highlighted-lines-config",
+            "text": "Highlighted Lines (Config)"
+          },
+          {
+            "level": 2,
+            "id": "terraform",
+            "text": "Terraform"
+          },
+          {
+            "level": 2,
+            "id": "go--interfaces",
+            "text": "Go + Interfaces"
+          },
+          {
+            "level": 2,
+            "id": "bash--jq",
+            "text": "Bash + jq"
+          }
+        ],
+        "wordCount": 220,
+        "readingMinutes": 1,
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "section": "What is new",
+        "sourceFile": "docs/v2/en/advanced-highlight-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:29:24.904Z",
+        "contentHash": "1264641e59acac29",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Advanced Highlight Demo",
+          "description": "v2 syntax stress page for larger snippets and edge grammars."
+        },
+        "plainText": "Advanced Highlight Demo v2 syntax stress page for larger snippets and edge grammars. TypeScript Generics TS Copy type ApiResult &lt;T&gt; = { ok : true ; data : T } | { ok : false ; error : string }; async function fetchJson&lt;T&gt;( url : string ): Promise &lt; ApiResult &lt;T&gt;&gt; { try { const res = await fetch (url); if (!res. ok ) return { ok : false , error : `HTTP ${res.status} ` }; return { ok : true , data : ( await res. json ()) as T }; } catch (error) { return { ok : false , error : String (error) }; } } Highlighted Lines (Config) deploy/pipeline.yaml Copy pipeline: name: docline-release triggers: - push steps: - run: npm ci - run: npm run build - run: npm run export Terraform ABNF Copy module \"docs_cdn\" { source = \"terraform-aws-modules/cloudfront/aws\" aliases = [ \"docs.example.com\" ] default_cache_behavior = { target_origin_id = \"docs-bucket\" viewer_protocol_policy = \"redirect-to-https\" } } Go + Interfaces GO Copy type Logger interface { Info(msg string , args ...any) Error(msg string , args ...any) } func Serve (logger Logger) { logger.Info( \"server started\" , \"port\" , 8080 ) } Bash + jq BASH Copy #!/usr/bin/env bash set -euo pipefail curl -s \"https://api.example.com/v2/pages?limit=5\" \\ -H \"Authorization: Bearer ${DOCS_TOKEN} \" \\ | jq '.items[] | {slug, updatedAt}'"
+      }
+    },
+    "v2:es": {
+      "introduction": {
+        "slug": "introduction",
+        "title": "Introducción (v2)",
+        "description": "docline v2 mejora versiones e idiomas.",
+        "html": "<h1 id=\"introducción\">Introducción</h1>\n<p>La versión <code>v2</code> muestra selector de versión y selector de idioma.</p>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "introducción",
+            "text": "Introducción"
+          }
+        ],
+        "wordCount": 20,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/introduction.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:32.015Z",
+        "contentHash": "aad8348528fe18cd",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Introducción (v2)",
+          "description": "docline v2 mejora versiones e idiomas."
+        },
+        "plainText": "Introducción (v2) docline v2 mejora versiones e idiomas. Introducción La versión v2 muestra selector de versión y selector de idioma."
+      },
+      "quickstart": {
+        "slug": "quickstart",
+        "title": "Inicio rápido (v2)",
+        "description": "Flujo actualizado para v2.",
+        "html": "<h1 id=\"inicio-rápido\">Inicio rápido</h1>\n<div class=\"callout callout-tip\"><p style=\"margin-top:0;font-weight:700\">Nuevo en v2</p><p>Usa los selectores de contexto en el encabezado.</p></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "inicio-rápido",
+            "text": "Inicio rápido"
+          }
+        ],
+        "wordCount": 20,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/quickstart.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:30:32.020Z",
+        "contentHash": "f6a378b1171a332a",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Inicio rápido (v2)",
+          "description": "Flujo actualizado para v2."
+        },
+        "plainText": "Inicio rápido (v2) Flujo actualizado para v2. Inicio rápido Nuevo en v2 Usa los selectores de contexto en el encabezado."
+      },
+      "components": {
+        "slug": "components",
+        "title": "Componentes (v2)",
+        "description": "Modelo MDX compilado en build.",
+        "html": "<h1 id=\"componentes\">Componentes</h1>\n<div class=\"callout callout-warning\">Todos los componentes se procesan durante <code>docs:compile</code>.</div>\n<h2 id=\"bloques-api\">Bloques API</h2>\n<div class=\"endpoint-block\"><div class=\"endpoint-header\" style=\"display:flex;gap:0.5rem;align-items:center;margin-bottom:0.6rem\"><span class=\"doc-badge\" style=\"font-weight:700\">POST</span><code>/v1/documents/import</code></div><p>Crea una nueva importacion de documentos.</p></div>\n<table><thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td><code>sourceUrl</code></td><td><code>string</code></td><td>yes</td><td>URL publica del contenido.</td></tr><tr><td><code>language</code></td><td><code>string</code></td><td>no</td><td>Idioma preferido (ejemplo: es, en).</td></tr><tr><td><code>overwrite</code></td><td><code>boolean</code></td><td>no</td><td>Reemplaza el contenido existente.</td></tr></tbody></table>\n<div class=\"response-example\"><p style=\"margin-bottom:0.5rem\"><strong>Respuesta de ejemplo</strong> <span class=\"doc-badge\">201</span></p><div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n<span class=\"hljs-attr\">\"id\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"imp_123\"</span><span class=\"hljs-punctuation\">,</span>\n<span class=\"hljs-attr\">\"status\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"queued\"</span><span class=\"hljs-punctuation\">,</span>\n<span class=\"hljs-attr\">\"createdAt\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"2026-08-01T11:20:00Z\"</span>\n<span class=\"hljs-punctuation\">}</span></code></pre></div></div>",
+        "toc": [
+          {
+            "level": 1,
+            "id": "componentes",
+            "text": "Componentes"
+          },
+          {
+            "level": 2,
+            "id": "bloques-api",
+            "text": "Bloques API"
+          }
+        ],
+        "wordCount": 71,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/components.mdx",
+        "sourceUpdatedAt": "2026-08-01T04:49:39.726Z",
+        "contentHash": "622b69d0679b314b",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Componentes (v2)",
+          "description": "Modelo MDX compilado en build."
+        },
+        "plainText": "Componentes (v2) Modelo MDX compilado en build. Componentes Todos los componentes se procesan durante docs:compile . Bloques API POST /v1/documents/import Crea una nueva importacion de documentos. Name Type Required Description sourceUrl string yes URL publica del contenido. language string no Idioma preferido (ejemplo: es, en). overwrite boolean no Reemplaza el contenido existente. Respuesta de ejemplo 201 JSON Copy { \"id\" : \"imp_123\" , \"status\" : \"queued\" , \"createdAt\" : \"2026-08-01T11:20:00Z\" }"
+      },
+      "syntax-showcase": {
+        "slug": "syntax-showcase",
+        "title": "Demo de Sintaxis",
+        "description": "Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo.",
+        "html": "<h2 id=\"json\">JSON</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"version\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"v2\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"locale\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"es\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"status\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"ok\"</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>\n<h2 id=\"javascript\">JavaScript</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JS</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">formatPath</span> = (<span class=\"hljs-params\">slug</span>) =&gt; <span class=\"hljs-string\">`/<span class=\"hljs-subst\">${slug}</span>`</span>;\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-title function_\">formatPath</span>(<span class=\"hljs-string\">'components'</span>));\n</code></pre></div>\n<h2 id=\"ruby\">Ruby</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">RB</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-rb\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">HealthCheck</span>\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">status</span>\n    <span class=\"hljs-symbol\">:ok</span>\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n</code></pre></div>\n<h2 id=\"php\">PHP</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">PHP</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-php\"><span class=\"hljs-meta\">&lt;?php</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">ping</span>(<span class=\"hljs-params\"></span>): <span class=\"hljs-title\">string</span> </span>{\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">'ok'</span>;\n}\n</code></pre></div>\n<h2 id=\"ini\">INI</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">INI</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-ini\"><span class=\"hljs-section\">[docline]</span>\n<span class=\"hljs-attr\">mode</span>=production\n<span class=\"hljs-attr\">cache</span>=<span class=\"hljs-literal\">true</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "json",
+            "text": "JSON"
+          },
+          {
+            "level": 2,
+            "id": "javascript",
+            "text": "JavaScript"
+          },
+          {
+            "level": 2,
+            "id": "ruby",
+            "text": "Ruby"
+          },
+          {
+            "level": 2,
+            "id": "php",
+            "text": "PHP"
+          },
+          {
+            "level": 2,
+            "id": "ini",
+            "text": "INI"
+          }
+        ],
+        "wordCount": 85,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/syntax-showcase.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.973Z",
+        "contentHash": "c3b06d08b1906b4c",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo de Sintaxis",
+          "description": "Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo."
+        },
+        "plainText": "Demo de Sintaxis Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo. JSON JSON Copy { \"version\" : \"v2\" , \"locale\" : \"es\" , \"status\" : \"ok\" } JavaScript JS Copy const formatPath = ( slug ) =&gt; `/ ${slug} ` ; console . log ( formatPath ( 'components' )); Ruby RB Copy class HealthCheck def status :ok end end PHP PHP Copy &lt;?php function ping ( ): string { return 'ok' ; } INI INI Copy [docline] mode =production cache = true"
+      },
+      "code-ux-demo": {
+        "slug": "code-ux-demo",
+        "title": "Demo UX de Codigo",
+        "description": "Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes.",
+        "html": "<h2 id=\"ejemplo-api-tabs\">Ejemplo API (Tabs)</h2>\n<div class=\"tabs-container\"><div class=\"tabs-nav\"><button type=\"button\" class=\"tabs-nav-btn active\" data-index=\"0\">curl</button><button type=\"button\" class=\"tabs-nav-btn\" data-index=\"1\">Node</button><button type=\"button\" class=\"tabs-copy-btn\" title=\"Copy\">Copy</button></div><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"curl\" style=\"display: block;\"><pre><code class=\"hljs language-bash\">curl -X PATCH https://api.example.com/v2/users/usr_20 \\\n  -H <span class=\"hljs-string\">\"Authorization: Bearer <span class=\"hljs-variable\">$DOCS_TOKEN</span>\"</span> \\\n  -H <span class=\"hljs-string\">\"Content-Type: application/json\"</span> \\\n  -d <span class=\"hljs-string\">'{\"active\":true}'</span>\n</code></pre></section><section class=\"tabs-panel tabs-panel-code\" data-tab-title=\"Node\" style=\"display: none;\"><pre><code class=\"hljs language-js\"><span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">fetch</span>(<span class=\"hljs-string\">'https://api.example.com/v2/users/usr_20'</span>, {\n  <span class=\"hljs-attr\">method</span>: <span class=\"hljs-string\">'PATCH'</span>,\n  <span class=\"hljs-attr\">headers</span>: {\n    <span class=\"hljs-title class_\">Authorization</span>: <span class=\"hljs-string\">`Bearer <span class=\"hljs-subst\">${process.env.DOCS_TOKEN}</span>`</span>,\n    <span class=\"hljs-string\">'Content-Type'</span>: <span class=\"hljs-string\">'application/json'</span>,\n  },\n  <span class=\"hljs-attr\">body</span>: <span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>({ <span class=\"hljs-attr\">active</span>: <span class=\"hljs-literal\">true</span> }),\n});\n</code></pre></section></div>\n<h2 id=\"configuracion\">Configuracion</h2>\n<div class=\"code-group\"><div class=\"code-group-tabs\"><button type=\"button\" class=\"code-group-tab active\" data-index=\"0\">env.yaml</button><button type=\"button\" class=\"code-group-tab\" data-index=\"1\">env.ini</button><button type=\"button\" class=\"code-group-copy\" title=\"Copy\">Copy</button></div><div class=\"code-group-panel\" style=\"display: block;\"><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">env:</span>\n  <span class=\"hljs-attr\">APP_ENV:</span> <span class=\"hljs-string\">production</span>\n  <span class=\"hljs-attr\">FEATURE_DOCS_V2:</span> <span class=\"hljs-literal\">true</span>\n</code></pre></div><div class=\"code-group-panel\" style=\"display: none;\"><pre><code class=\"hljs language-ini\"><span class=\"hljs-section\">[env]</span>\n<span class=\"hljs-attr\">APP_ENV</span>=production\n<span class=\"hljs-attr\">FEATURE_DOCS_V2</span>=<span class=\"hljs-literal\">true</span>\n</code></pre></div></div>\n<h2 id=\"sql--json\">SQL + JSON</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">SQL</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-sql\"><span class=\"hljs-keyword\">UPDATE</span> users\n<span class=\"hljs-keyword\">SET</span> active <span class=\"hljs-operator\">=</span> <span class=\"hljs-literal\">true</span>\n<span class=\"hljs-keyword\">WHERE</span> id <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">'usr_20'</span>;\n</code></pre></div>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"ok\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">true</span></span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"updated\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-number\">1</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "ejemplo-api-tabs",
+            "text": "Ejemplo API (Tabs)"
+          },
+          {
+            "level": 2,
+            "id": "configuracion",
+            "text": "Configuracion"
+          },
+          {
+            "level": 2,
+            "id": "sql--json",
+            "text": "SQL + JSON"
+          }
+        ],
+        "wordCount": 116,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/code-ux-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:11:15.982Z",
+        "contentHash": "f10538f569ffd2b3",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo UX de Codigo",
+          "description": "Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes."
+        },
+        "plainText": "Demo UX de Codigo Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes. Ejemplo API (Tabs) curl Node Copy curl -X PATCH https://api.example.com/v2/users/usr_20 \\ -H \"Authorization: Bearer $DOCS_TOKEN \" \\ -H \"Content-Type: application/json\" \\ -d '{\"active\":true}' await fetch ( 'https://api.example.com/v2/users/usr_20' , { method : 'PATCH' , headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` , 'Content-Type' : 'application/json' , }, body : JSON . stringify ({ active : true }), }); Configuracion env.yaml env.ini Copy env: APP_ENV: production FEATURE_DOCS_V2: true [env] APP_ENV =production FEATURE_DOCS_V2 = true SQL + JSON SQL Copy UPDATE users SET active = true WHERE id = 'usr_20' ; JSON Copy { \"ok\" : true , \"updated\" : 1 }"
+      },
+      "advanced-highlight-demo": {
+        "slug": "advanced-highlight-demo",
+        "title": "Demo Avanzado de Resaltado",
+        "description": "Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes.",
+        "html": "<h2 id=\"php\">PHP</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">PHP</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-php\"><span class=\"hljs-meta\">&lt;?php</span>\n<span class=\"hljs-keyword\">final</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">HealthController</span> </span>{\n  <span class=\"hljs-keyword\">public</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">ping</span>(<span class=\"hljs-params\"></span>): <span class=\"hljs-title\">array</span> </span>{\n    <span class=\"hljs-keyword\">return</span> [<span class=\"hljs-string\">'ok'</span> =&gt; <span class=\"hljs-literal\">true</span>, <span class=\"hljs-string\">'ts'</span> =&gt; <span class=\"hljs-title function_ invoke__\">time</span>()];\n  }\n}\n</code></pre></div>\n<h2 id=\"ruby\">Ruby</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">RB</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-rb\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Release</span>\n  <span class=\"hljs-built_in\">attr_reader</span> <span class=\"hljs-symbol\">:version</span>, <span class=\"hljs-symbol\">:stable</span>\n\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">initialize</span>(<span class=\"hljs-params\"><span class=\"hljs-symbol\">version:</span>, <span class=\"hljs-symbol\">stable:</span> <span class=\"hljs-literal\">true</span></span>)\n    <span class=\"hljs-variable\">@version</span> = version\n    <span class=\"hljs-variable\">@stable</span> = stable\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n</code></pre></div>\n<h2 id=\"yaml\">YAML</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">YAML</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-yaml\"><span class=\"hljs-attr\">pipeline:</span>\n  <span class=\"hljs-attr\">name:</span> <span class=\"hljs-string\">docline-release</span>\n  <span class=\"hljs-attr\">steps:</span>\n    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">ci</span>\n    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">run</span> <span class=\"hljs-string\">build</span>\n    <span class=\"hljs-bullet\">-</span> <span class=\"hljs-attr\">run:</span> <span class=\"hljs-string\">npm</span> <span class=\"hljs-string\">run</span> <span class=\"hljs-string\">export</span>\n</code></pre></div>\n<h2 id=\"json\">JSON</h2>\n<div class=\"code-block-wrapper\"><div class=\"code-block-toolbar\"><span class=\"code-language\">JSON</span><button type=\"button\" class=\"code-copy-btn\" title=\"Copy\">Copy</button></div><pre><code class=\"hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"release\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n    <span class=\"hljs-attr\">\"version\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"2.1.0\"</span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"stable\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-literal\"><span class=\"hljs-keyword\">true</span></span><span class=\"hljs-punctuation\">,</span>\n    <span class=\"hljs-attr\">\"channels\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">[</span><span class=\"hljs-string\">\"web\"</span><span class=\"hljs-punctuation\">,</span> <span class=\"hljs-string\">\"cdn\"</span><span class=\"hljs-punctuation\">]</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre></div>",
+        "toc": [
+          {
+            "level": 2,
+            "id": "php",
+            "text": "PHP"
+          },
+          {
+            "level": 2,
+            "id": "ruby",
+            "text": "Ruby"
+          },
+          {
+            "level": 2,
+            "id": "yaml",
+            "text": "YAML"
+          },
+          {
+            "level": 2,
+            "id": "json",
+            "text": "JSON"
+          }
+        ],
+        "wordCount": 113,
+        "readingMinutes": 1,
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "section": "Novedades",
+        "sourceFile": "docs/v2/es/advanced-highlight-demo.mdx",
+        "sourceUpdatedAt": "2026-08-01T05:12:52.365Z",
+        "contentHash": "4a502c62f8ab6bb0",
+        "includesUsed": [],
+        "frontmatter": {
+          "title": "Demo Avanzado de Resaltado",
+          "description": "Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes."
+        },
+        "plainText": "Demo Avanzado de Resaltado Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes. PHP PHP Copy &lt;?php final class HealthController { public function ping ( ): array { return [ 'ok' =&gt; true , 'ts' =&gt; time ()]; } } Ruby RB Copy class Release attr_reader :version , :stable def initialize ( version: , stable: true ) @version = version @stable = stable end end YAML YAML Copy pipeline: name: docline-release steps: - run: npm ci - run: npm run build - run: npm run export JSON JSON Copy { \"release\" : { \"version\" : \"2.1.0\" , \"stable\" : true , \"channels\" : [ \"web\" , \"cdn\" ] } }"
+      }
+    }
+  },
+  "searchIndex": {
+    "v1:en": [
+      {
+        "slug": "introduction",
+        "title": "Introduction",
+        "description": "Welcome to docline v1 English docs.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Introduction Welcome to docline v1 English docs. Introduction docline compiles MDX to static HTML at build time and ships a static search index. This page demonstrates real MDX components rendered through the MDX compiler. Static build Generate pages during build, not at runtime. Config-driven Control versions, locales, and navigation in docs.json."
+      },
+      {
+        "slug": "quickstart",
+        "title": "Quickstart",
+        "description": "Build and run docline locally.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Quickstart Build and run docline locally. Quickstart Install dependencies Run npm install in the repository root. Compile static docs Run npm run docs:compile . Start local preview Run npm run dev and open the shown URL. Why static generation All markdown and MDX are compiled ahead of time into static HTML and search data."
+      },
+      {
+        "slug": "components",
+        "title": "Components",
+        "description": "Prebuilt MDX components in docline.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Components Prebuilt MDX components in docline. Components Badge Tip Warning Use Card , CardGroup , Steps , Accordion , and more directly in MDX. Available blocks Tip, Note, Warning, Callout, Card, CardGroup, Steps, Tabs, BadgeGroup, Columns, and Frame."
+      },
+      {
+        "slug": "syntax-showcase",
+        "title": "Syntax Showcase",
+        "description": "Dummy page to preview multi-language syntax highlighting in docline.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Syntax Showcase Dummy page to preview multi-language syntax highlighting in docline. API JSON JSON Copy { \"id\" : \"usr_1024\" , \"email\" : \"user@example.com\" , \"roles\" : [ \"admin\" , \"editor\" ] , \"active\" : true } TypeScript TS Copy export type User = { id : string ; email : string ; roles : string []; active : boolean ; }; export function canEdit ( user : User ): boolean { return user. active &amp;&amp; user. roles . includes ( 'editor' ); } Python PYTHON Copy from dataclasses import dataclass @dataclass class Job : id : str retries: int = 0 def run ( job: Job ) -&gt; str : return f\"running {job. id } (retries= {job.retries} )\" Bash BASH Copy #!/usr/bin/env bash set -euo pipefail export API_BASE_URL= \"https://api.example.com\" curl -s \" $API_BASE_URL /health\" | jq . Go GO Copy package main import \"fmt\" type Config struct { Port int } func main () { cfg := Config{Port: 8080 } fmt.Printf( \"listening on :%d\\n\" , cfg.Port) } Java JAVA Copy public class HealthService { public String ping () { return \"ok\" ; } } Rust RUST Copy fn main () { let env = \"prod\" ; println! ( \"service started in {}\" , env); } SQL SQL Copy SELECT id, email, created_at FROM users WHERE active = true ORDER BY created_at DESC LIMIT 20 ; YAML YAML Copy service: name: docs-api replicas: 2 resources: cpu: \"250m\" memory: \"512Mi\" Dockerfile DOCKERFILE Copy FROM node: 22 -alpine WORKDIR /app COPY package*.json ./ RUN npm ci --omit=dev COPY . . CMD [ \"node\" , \"server.js\" ]"
+      },
+      {
+        "slug": "code-ux-demo",
+        "title": "Code UX Demo",
+        "description": "Multi-language tabbed examples and code patterns for UX validation.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Code UX Demo Multi-language tabbed examples and code patterns for UX validation. Quickstart Endpoint (Tabs) curl JavaScript Python Copy curl -X POST https://api.example.com/v1/tickets \\ -H \"Authorization: Bearer $DOCS_TOKEN \" \\ -H \"Content-Type: application/json\" \\ -d '{\"title\":\"Printer offline\",\"priority\":\"high\"}' const response = await fetch ( 'https://api.example.com/v1/tickets' , { method : 'POST' , headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` , 'Content-Type' : 'application/json' , }, body : JSON . stringify ({ title : 'Printer offline' , priority : 'high' }), }); const data = await response. json (); console . log (data. id ); import requests response = requests.post( \"https://api.example.com/v1/tickets\" , headers={ \"Authorization\" : f\"Bearer {DOCS_TOKEN} \" }, json={ \"title\" : \"Printer offline\" , \"priority\" : \"high\" }, timeout= 10 , ) print (response.json()[ \"id\" ]) Auth Config (CodeGroup) config.yaml config.toml config.json Copy auth: provider: oidc issuer: https://auth.example.com audience: docs-ui [auth] provider = \"oidc\" issuer = \"https://auth.example.com\" audience = \"docs-ui\" { \"auth\" : { \"provider\" : \"oidc\" , \"issuer\" : \"https://auth.example.com\" , \"audience\" : \"docs-ui\" } } SQL + JSON Payload SQL Copy SELECT id, title, status, updated_at FROM tickets WHERE status IN ( 'open' , 'in_progress' ) ORDER BY updated_at DESC LIMIT 50 ; JSON Copy { \"ticket\" : { \"id\" : \"tkt_9921\" , \"status\" : \"open\" , \"assignee\" : { \"id\" : \"usr_20\" , \"name\" : \"Alex\" } } }"
+      },
+      {
+        "slug": "advanced-highlight-demo",
+        "title": "Advanced Highlight Demo",
+        "description": "Stress-test page for syntax highlighting quality across complex grammars.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "Getting Started",
+        "text": "Advanced Highlight Demo Stress-test page for syntax highlighting quality across complex grammars. JavaScript (Regex + Template Literals) JS Copy const routePattern = /^(?&lt;method&gt;GET|POST|PATCH)\\s+(?&lt;path&gt;\\/api\\/[\\w/-]+)$/i ; export function parseRoute ( input ) { const match = routePattern. exec (input?. trim () || '' ); if (!match?. groups ) throw new Error ( `Invalid route: ${input} ` ); const { method, path } = match. groups ; return { method, path, cacheKey : ` ${method} : ${path} ` , }; } Line Highlight + Filename Demo src/lib/route-parser.ts Copy type ParsedRoute = { method : 'GET' | 'POST' | 'PATCH' ; path : string ; cacheKey : string ; }; export function toCacheKey ( input : ParsedRoute ): string { const normalizedPath = input. path . replace ( /\\/+$/ , '' ); return ` ${input.method} : ${normalizedPath} ` ; } SQL (CTE + JSON) SQL Copy WITH active_users AS ( SELECT id, email, metadata FROM users WHERE active = true ), user_stats AS ( SELECT id, email, metadata - &gt;&gt; 'plan' AS plan, jsonb_array_length( COALESCE (metadata - &gt; 'roles' , '[]' ::jsonb)) AS role_count FROM active_users ) SELECT * FROM user_stats WHERE role_count &gt; 0 ORDER BY email ASC ; Dockerfile (Multi-stage) DOCKERFILE Copy FROM node: 22 -alpine AS deps WORKDIR /app COPY package*.json ./ RUN npm ci FROM node: 22 -alpine AS build WORKDIR /app COPY --from=deps /app/node_modules ./node_modules COPY . . RUN npm run build FROM nginx:alpine AS runtime COPY --from=build /app/dist /usr/share/nginx/html EXPOSE 80 CMD [ \"nginx\" , \"-g\" , \"daemon off;\" ] GraphQL + Fragments GRAPHQL Copy fragment PageCore on Page { slug title description } query SearchPages ( $query : String ! , $limit : Int = 10 ) { searchPages ( query : $query , limit : $limit ) { ... PageCore updatedAt score } } Rust + Lifetimes RUST Copy fn pick_longer &lt; 'a &gt;(left: &amp; 'a str , right: &amp; 'a str ) -&gt; &amp; 'a str { if left. len () &gt;= right. len () { left } else { right } } fn main () { let a = String :: from ( \"docline\" ); let b = \"docs\" ; println! ( \"{}\" , pick_longer (&amp;a, b)); } CodeGroup: Same Config in 3 Formats config.yaml config.toml config.ini Copy service: name: docline retry: maxAttempts: 3 backoffMs: 250 [service] name = \"docline\" [service.retry] maxAttempts = 3 backoffMs = 250 [service] name =docline maxAttempts = 3 backoffMs = 250"
+      }
+    ],
+    "v1:es": [
+      {
+        "slug": "introduction",
+        "title": "Introducción",
+        "description": "Bienvenido a la documentación en Español de docline v1.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Introducción Bienvenido a la documentación en Español de docline v1. Introducción docline compila MDX a HTML estático en build time y genera un índice de búsqueda estático. Esta página usa componentes MDX reales compilados en build."
+      },
+      {
+        "slug": "quickstart",
+        "title": "Inicio rápido",
+        "description": "Cómo ejecutar docline localmente.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Inicio rápido Cómo ejecutar docline localmente. Inicio rápido Ejecuta npm install . Ejecuta npm run docs:compile . Ejecuta npm run dev ."
+      },
+      {
+        "slug": "components",
+        "title": "Componentes",
+        "description": "Componentes MDX integrados.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Componentes Componentes MDX integrados. Componentes Puedes usar Card , Steps , Accordion , Tabs , Columns y más."
+      },
+      {
+        "slug": "syntax-showcase",
+        "title": "Demo de Sintaxis",
+        "description": "Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Demo de Sintaxis Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline. JSON de API JSON Copy { \"id\" : \"usr_2048\" , \"email\" : \"usuario@ejemplo.com\" , \"roles\" : [ \"admin\" , \"editor\" ] , \"active\" : true } TypeScript TS Copy export interface Session { id : string ; locale : 'es' | 'en' ; expiresAt : string ; } export const isExpired = ( session : Session , now : string ) =&gt; now &gt; session. expiresAt ; Python PYTHON Copy def saludar ( nombre: str ) -&gt; str : return f\"hola, {nombre} \" print (saludar( \"equipo\" )) Bash BASH Copy #!/usr/bin/env bash set -euo pipefail echo \"compilando docs...\" npm run build SQL SQL Copy SELECT slug, title FROM pages WHERE locale = 'es' ORDER BY title ASC ; YAML YAML Copy build: command: npm run build output: dist"
+      },
+      {
+        "slug": "code-ux-demo",
+        "title": "Demo UX de Codigo",
+        "description": "Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Demo UX de Codigo Ejemplos con pestañas y patrones multi-lenguaje para validar experiencia de codigo. Endpoint Rapido (Pestanas) curl JavaScript Python Copy curl -X GET \"https://api.example.com/v1/projects?limit=20\" \\ -H \"Authorization: Bearer $DOCS_TOKEN \" const resp = await fetch ( 'https://api.example.com/v1/projects?limit=20' , { headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` }, }); const projects = await resp. json (); console . log (projects. length ); import requests resp = requests.get( \"https://api.example.com/v1/projects?limit=20\" , headers={ \"Authorization\" : f\"Bearer {DOCS_TOKEN} \" }, ) print ( len (resp.json())) Configuracion (CodeGroup) app.yaml app.json Copy feature_flags: docs_search: true ai_assistant: false { \"feature_flags\" : { \"docs_search\" : true , \"ai_assistant\" : false } } SQL SQL Copy SELECT slug, title FROM pages WHERE locale = 'es' ORDER BY title;"
+      },
+      {
+        "slug": "advanced-highlight-demo",
+        "title": "Demo Avanzado de Resaltado",
+        "description": "Pagina de prueba con gramaticas complejas para validar calidad de resaltado.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Comenzar",
+        "text": "Demo Avanzado de Resaltado Pagina de prueba con gramaticas complejas para validar calidad de resaltado. JavaScript JS Copy const token = process. env . DOCS_TOKEN ?? 'dev-token' ; const safe = ( value ) =&gt; String (value). replace ( /[&lt;&gt;\"']/g , '_' ); console . log ( `token-length= ${safe(token).length} ` ); SQL SQL Copy SELECT p.slug, p.title, c.locale FROM pages p JOIN contexts c ON c.id = p.context_id WHERE c.version = 'v2' AND c.locale IN ( 'es' , 'en' ) ORDER BY p.updated_at DESC LIMIT 25 ; Dockerfile DOCKERFILE Copy FROM python: 3.13 -slim WORKDIR /app COPY requirements.txt ./ RUN pip install --no-cache-dir -r requirements.txt COPY . . CMD [ \"python\" , \"main.py\" ] GraphQL GRAPHQL Copy query PageBySlug ( $slug : String ! ) { page ( slug : $slug ) { slug title blocks { __typename ... on CodeBlock { language code } } } }"
+      }
+    ],
+    "v2:en": [
+      {
+        "slug": "introduction",
+        "title": "Introduction (v2)",
+        "description": "docline v2 focuses on multi-locale + versioned docs.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Introduction (v2) docline v2 focuses on multi-locale + versioned docs. Introduction Version v2 demonstrates the versioning switcher with static pages."
+      },
+      {
+        "slug": "quickstart",
+        "title": "Quickstart (v2)",
+        "description": "Updated setup for v2 docs.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Quickstart (v2) Updated setup for v2 docs. Quickstart New in v2 Use context switches in the header to move between versions and languages. Auth header Use this standard header in all examples: Authorization: Bearer &lt;token&gt;"
+      },
+      {
+        "slug": "components",
+        "title": "Components (v2)",
+        "description": "Same MDX component model across versions.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Components (v2) Same MDX component model across versions. Components Card Accordion Copy Version-safe components Components are rendered at build time into static HTML. Why this matters No runtime regex parser required."
+      },
+      {
+        "slug": "syntax-showcase",
+        "title": "Syntax Showcase",
+        "description": "v2 dummy page to validate language coverage and code rendering quality.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Syntax Showcase v2 dummy page to validate language coverage and code rendering quality. Terraform ABNF Copy resource \"aws_s3_bucket\" \"docs\" { bucket = \"docline-assets-prod\" tags = { Environment = \"prod\" Team = \"docs\" } } Kotlin KOTLIN Copy data class FeatureFlag ( val key: String, val enabled: Boolean ) fun isEnabled (flag: FeatureFlag ) : Boolean = flag.enabled C# CSHARP Copy public record Tenant ( string Id, string Name ) ; public static bool IsValid ( Tenant tenant ) { return ! string .IsNullOrWhiteSpace(tenant.Id); } GraphQL GRAPHQL Copy query DocsPage ( $slug : String ! ) { page ( slug : $slug ) { title description updatedAt } } TOML TOML Copy [docs] name = \"docline\" version = \"2.0\" multilingual = true"
+      },
+      {
+        "slug": "code-ux-demo",
+        "title": "Code UX Demo",
+        "description": "v2 code experience demo with tabs, groups, and mixed language samples.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Code UX Demo v2 code experience demo with tabs, groups, and mixed language samples. Infrastructure Snippets Terraform Pulumi TS Copy resource \"aws_sqs_queue\" \"events\" { name = \"docline-events\" message_retention_seconds = 345600 } import * as aws from '@pulumi/aws' ; const queue = new aws. sqs . Queue ( 'docline-events' , { messageRetentionSeconds : 345600 , }); Runtime Config app.ini app.toml app.yaml Copy [service] name =docline region =us-east- 1 [service] name = \"docline\" region = \"us-east-1\" service: name: docline region: us-east-1 Backend Examples GO Copy func canPublish (role string ) bool { return role == \"owner\" || role == \"editor\" } RUST Copy fn can_publish (role: &amp; str ) -&gt; bool { role == \"owner\" || role == \"editor\" }"
+      },
+      {
+        "slug": "advanced-highlight-demo",
+        "title": "Advanced Highlight Demo",
+        "description": "v2 syntax stress page for larger snippets and edge grammars.",
+        "tabId": "guides",
+        "tabLabel": "Guides",
+        "groupName": "What is new",
+        "text": "Advanced Highlight Demo v2 syntax stress page for larger snippets and edge grammars. TypeScript Generics TS Copy type ApiResult &lt;T&gt; = { ok : true ; data : T } | { ok : false ; error : string }; async function fetchJson&lt;T&gt;( url : string ): Promise &lt; ApiResult &lt;T&gt;&gt; { try { const res = await fetch (url); if (!res. ok ) return { ok : false , error : `HTTP ${res.status} ` }; return { ok : true , data : ( await res. json ()) as T }; } catch (error) { return { ok : false , error : String (error) }; } } Highlighted Lines (Config) deploy/pipeline.yaml Copy pipeline: name: docline-release triggers: - push steps: - run: npm ci - run: npm run build - run: npm run export Terraform ABNF Copy module \"docs_cdn\" { source = \"terraform-aws-modules/cloudfront/aws\" aliases = [ \"docs.example.com\" ] default_cache_behavior = { target_origin_id = \"docs-bucket\" viewer_protocol_policy = \"redirect-to-https\" } } Go + Interfaces GO Copy type Logger interface { Info(msg string , args ...any) Error(msg string , args ...any) } func Serve (logger Logger) { logger.Info( \"server started\" , \"port\" , 8080 ) } Bash + jq BASH Copy #!/usr/bin/env bash set -euo pipefail curl -s \"https://api.example.com/v2/pages?limit=5\" \\ -H \"Authorization: Bearer ${DOCS_TOKEN} \" \\ | jq '.items[] | {slug, updatedAt}'"
+      }
+    ],
+    "v2:es": [
+      {
+        "slug": "introduction",
+        "title": "Introducción (v2)",
+        "description": "docline v2 mejora versiones e idiomas.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Introducción (v2) docline v2 mejora versiones e idiomas. Introducción La versión v2 muestra selector de versión y selector de idioma."
+      },
+      {
+        "slug": "quickstart",
+        "title": "Inicio rápido (v2)",
+        "description": "Flujo actualizado para v2.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Inicio rápido (v2) Flujo actualizado para v2. Inicio rápido Nuevo en v2 Usa los selectores de contexto en el encabezado."
+      },
+      {
+        "slug": "components",
+        "title": "Componentes (v2)",
+        "description": "Modelo MDX compilado en build.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Componentes (v2) Modelo MDX compilado en build. Componentes Todos los componentes se procesan durante docs:compile . Bloques API POST /v1/documents/import Crea una nueva importacion de documentos. Name Type Required Description sourceUrl string yes URL publica del contenido. language string no Idioma preferido (ejemplo: es, en). overwrite boolean no Reemplaza el contenido existente. Respuesta de ejemplo 201 JSON Copy { \"id\" : \"imp_123\" , \"status\" : \"queued\" , \"createdAt\" : \"2026-08-01T11:20:00Z\" }"
+      },
+      {
+        "slug": "syntax-showcase",
+        "title": "Demo de Sintaxis",
+        "description": "Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Demo de Sintaxis Pagina v2 de ejemplo para validar resaltado y visualizacion de codigo. JSON JSON Copy { \"version\" : \"v2\" , \"locale\" : \"es\" , \"status\" : \"ok\" } JavaScript JS Copy const formatPath = ( slug ) =&gt; `/ ${slug} ` ; console . log ( formatPath ( 'components' )); Ruby RB Copy class HealthCheck def status :ok end end PHP PHP Copy &lt;?php function ping ( ): string { return 'ok' ; } INI INI Copy [docline] mode =production cache = true"
+      },
+      {
+        "slug": "code-ux-demo",
+        "title": "Demo UX de Codigo",
+        "description": "Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Demo UX de Codigo Pagina v2 para validar tabs de codigo y consistencia visual entre lenguajes. Ejemplo API (Tabs) curl Node Copy curl -X PATCH https://api.example.com/v2/users/usr_20 \\ -H \"Authorization: Bearer $DOCS_TOKEN \" \\ -H \"Content-Type: application/json\" \\ -d '{\"active\":true}' await fetch ( 'https://api.example.com/v2/users/usr_20' , { method : 'PATCH' , headers : { Authorization : `Bearer ${process.env.DOCS_TOKEN} ` , 'Content-Type' : 'application/json' , }, body : JSON . stringify ({ active : true }), }); Configuracion env.yaml env.ini Copy env: APP_ENV: production FEATURE_DOCS_V2: true [env] APP_ENV =production FEATURE_DOCS_V2 = true SQL + JSON SQL Copy UPDATE users SET active = true WHERE id = 'usr_20' ; JSON Copy { \"ok\" : true , \"updated\" : 1 }"
+      },
+      {
+        "slug": "advanced-highlight-demo",
+        "title": "Demo Avanzado de Resaltado",
+        "description": "Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes.",
+        "tabId": "guias",
+        "tabLabel": "Guias",
+        "groupName": "Novedades",
+        "text": "Demo Avanzado de Resaltado Pagina v2 para comprobar consistencia de colores y tokens en varios lenguajes. PHP PHP Copy &lt;?php final class HealthController { public function ping ( ): array { return [ 'ok' =&gt; true , 'ts' =&gt; time ()]; } } Ruby RB Copy class Release attr_reader :version , :stable def initialize ( version: , stable: true ) @version = version @stable = stable end end YAML YAML Copy pipeline: name: docline-release steps: - run: npm ci - run: npm run build - run: npm run export JSON JSON Copy { \"release\" : { \"version\" : \"2.1.0\" , \"stable\" : true , \"channels\" : [ \"web\" , \"cdn\" ] } }"
+      }
+    ]
+  },
+  "redirects": []
+}

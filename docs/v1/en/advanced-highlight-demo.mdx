@@ -1,0 +1,139 @@
+---
+title: Advanced Highlight Demo
+description: Stress-test page for syntax highlighting quality across complex grammars.
+---
+
+## JavaScript (Regex + Template Literals)
+
+```js
+const routePattern = /^(?<method>GET|POST|PATCH)\s+(?<path>\/api\/[\w/-]+)$/i;
+
+export function parseRoute(input) {
+  const match = routePattern.exec(input?.trim() || '');
+  if (!match?.groups) throw new Error(`Invalid route: ${input}`);
+
+  const { method, path } = match.groups;
+  return {
+    method,
+    path,
+    cacheKey: `${method}:${path}`,
+  };
+}
+```
+
+## Line Highlight + Filename Demo
+
+```ts src/lib/route-parser.ts {1,6-10}
+type ParsedRoute = {
+  method: 'GET' | 'POST' | 'PATCH';
+  path: string;
+  cacheKey: string;
+};
+
+export function toCacheKey(input: ParsedRoute): string {
+  const normalizedPath = input.path.replace(/\/+$/, '');
+  return `${input.method}:${normalizedPath}`;
+}
+```
+
+## SQL (CTE + JSON)
+
+```sql
+WITH active_users AS (
+  SELECT id, email, metadata
+  FROM users
+  WHERE active = true
+),
+user_stats AS (
+  SELECT
+    id,
+    email,
+    metadata->>'plan' AS plan,
+    jsonb_array_length(COALESCE(metadata->'roles', '[]'::jsonb)) AS role_count
+  FROM active_users
+)
+SELECT *
+FROM user_stats
+WHERE role_count > 0
+ORDER BY email ASC;
+```
+
+## Dockerfile (Multi-stage)
+
+```dockerfile
+FROM node:22-alpine AS deps
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+
+FROM node:22-alpine AS build
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine AS runtime
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+## GraphQL + Fragments
+
+```graphql
+fragment PageCore on Page {
+  slug
+  title
+  description
+}
+
+query SearchPages($query: String!, $limit: Int = 10) {
+  searchPages(query: $query, limit: $limit) {
+    ...PageCore
+    updatedAt
+    score
+  }
+}
+```
+
+## Rust + Lifetimes
+
+```rust
+fn pick_longer<'a>(left: &'a str, right: &'a str) -> &'a str {
+    if left.len() >= right.len() { left } else { right }
+}
+
+fn main() {
+    let a = String::from("docline");
+    let b = "docs";
+    println!("{}", pick_longer(&a, b));
+}
+```
+
+## CodeGroup: Same Config in 3 Formats
+
+<CodeGroup>
+```yaml config.yaml
+service:
+  name: docline
+  retry:
+    maxAttempts: 3
+    backoffMs: 250
+```
+
+```toml config.toml
+[service]
+name = "docline"
+
+[service.retry]
+maxAttempts = 3
+backoffMs = 250
+```
+
+```ini config.ini
+[service]
+name=docline
+maxAttempts=3
+backoffMs=250
+```
+</CodeGroup>

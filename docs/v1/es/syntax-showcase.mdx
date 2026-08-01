@@ -1,0 +1,63 @@
+---
+title: Demo de Sintaxis
+description: Pagina de prueba para ver resaltado de sintaxis multi-lenguaje en docline.
+---
+
+## JSON de API
+
+```json
+{
+  "id": "usr_2048",
+  "email": "usuario@ejemplo.com",
+  "roles": ["admin", "editor"],
+  "active": true
+}
+```
+
+## TypeScript
+
+```ts
+export interface Session {
+  id: string;
+  locale: 'es' | 'en';
+  expiresAt: string;
+}
+
+export const isExpired = (session: Session, now: string) => now > session.expiresAt;
+```
+
+## Python
+
+```python
+def saludar(nombre: str) -> str:
+    return f"hola, {nombre}"
+
+print(saludar("equipo"))
+```
+
+## Bash
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "compilando docs..."
+npm run build
+```
+
+## SQL
+
+```sql
+SELECT slug, title
+FROM pages
+WHERE locale = 'es'
+ORDER BY title ASC;
+```
+
+## YAML
+
+```yaml
+build:
+  command: npm run build
+  output: dist
+```
