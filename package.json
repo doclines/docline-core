@@ -37,7 +37,16 @@
     "preview": "vite preview",
     "scaffold:starter": "node scripts/scaffold-template.mjs"
   },
-  "keywords": [],
+  "keywords": [
+    "docline",
+    "documentation",
+    "docs",
+    "mdx",
+    "static-site",
+    "vite",
+    "react",
+    "generator"
+  ],
   "author": "chinna NJ",
   "license": "MIT",
   "dependencies": {
@@ -59,6 +68,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.4",
+    "playwright": "^1.55.1",
     "postcss": "^8.5.25",
     "tailwindcss": "^3.4.17",
     "vite": "^8.0.12"

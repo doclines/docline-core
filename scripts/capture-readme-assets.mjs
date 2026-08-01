@@ -15,6 +15,7 @@ const outputDir = path.join(cwd, 'public', 'readme', 'generated');
 const desktopPath = path.join(outputDir, 'docline-desktop.png');
 const mobilePath = path.join(outputDir, 'docline-mobile.png');
 const gifPath = path.join(outputDir, 'docline-preview.gif');
+const effectsGifPath = path.join(outputDir, 'docline-effects.gif');
 
 function resolveBrowserLaunchOptions() {
   const localChromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
@@ -30,6 +31,29 @@ function hasFfmpeg() {
     const p = spawn('ffmpeg', ['-version'], { stdio: 'ignore' });
     p.on('exit', (code) => resolve(code === 0));
     p.on('error', () => resolve(false));
+  });
+}
+
+async function renderGifFromFrames(framesDir, destination) {
+  await new Promise((resolve, reject) => {
+    const ff = spawn(
+      'ffmpeg',
+      [
+        '-y',
+        '-framerate',
+        '1',
+        '-i',
+        path.join(framesDir, '%03d.png'),
+        '-vf',
+        'scale=1200:-1:flags=lanczos',
+        '-loop',
+        '0',
+        destination,
+      ],
+      { stdio: 'inherit' }
+    );
+    ff.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`ffmpeg exited with code ${code}`))));
+    ff.on('error', reject);
   });
 }
 
@@ -81,7 +105,9 @@ async function capture() {
     const ffmpegInstalled = await hasFfmpeg();
     if (ffmpegInstalled) {
       const framesDir = path.join(outputDir, '.frames');
+      const effectsFramesDir = path.join(outputDir, '.effects-frames');
       fs.mkdirSync(framesDir, { recursive: true });
+      fs.mkdirSync(effectsFramesDir, { recursive: true });
 
       const page = await browser.newPage({ viewport: { width: 1400, height: 860 } });
       await page.goto(`${baseUrl}/introduction?version=v1&lang=en`, { waitUntil: 'networkidle' });
@@ -93,31 +119,31 @@ async function capture() {
       await page.goto(`${baseUrl}/quickstart?version=v2&lang=es`, { waitUntil: 'networkidle' });
       await page.screenshot({ path: path.join(framesDir, '002.png') });
 
+      // Capture a second GIF showing the UI effect toggles through query params.
+      await page.goto(`${baseUrl}/introduction?version=v1&lang=en&theme=ayu-light`, { waitUntil: 'networkidle' });
+      await page.screenshot({ path: path.join(effectsFramesDir, '000.png') });
+
+      await page.goto(`${baseUrl}/introduction?version=v1&lang=en&theme=tokyo-night-storm`, { waitUntil: 'networkidle' });
+      await page.screenshot({ path: path.join(effectsFramesDir, '001.png') });
+
+      await page.goto(`${baseUrl}/introduction?version=v1&lang=en&theme=dracula-pro&contrast=high`, { waitUntil: 'networkidle' });
+      await page.screenshot({ path: path.join(effectsFramesDir, '002.png') });
+
+      await page.goto(`${baseUrl}/introduction?version=v1&lang=en&theme=night-owl&density=compact`, { waitUntil: 'networkidle' });
+      await page.screenshot({ path: path.join(effectsFramesDir, '003.png') });
+
+      await page.goto(`${baseUrl}/introduction?version=v1&lang=en&theme=one-dark-pro&reading=on&performance=on`, { waitUntil: 'networkidle' });
+      await page.screenshot({ path: path.join(effectsFramesDir, '004.png') });
+
       await browser.close();
 
-      await new Promise((resolve, reject) => {
-        const ff = spawn(
-          'ffmpeg',
-          [
-            '-y',
-            '-framerate',
-            '1',
-            '-i',
-            path.join(framesDir, '%03d.png'),
-            '-vf',
-            'scale=1200:-1:flags=lanczos',
-            '-loop',
-            '0',
-            gifPath,
-          ],
-          { stdio: 'inherit' }
-        );
-        ff.on('exit', (code) => (code === 0 ? resolve() : reject(new Error(`ffmpeg exited with code ${code}`))));
-        ff.on('error', reject);
-      });
+      await renderGifFromFrames(framesDir, gifPath);
+      await renderGifFromFrames(effectsFramesDir, effectsGifPath);
 
       fs.rmSync(framesDir, { recursive: true, force: true });
+      fs.rmSync(effectsFramesDir, { recursive: true, force: true });
       console.log(`[docline capture] Wrote ${gifPath}`);
+      console.log(`[docline capture] Wrote ${effectsGifPath}`);
     } else {
       await browser.close();
       console.log('[docline capture] ffmpeg not found; skipped GIF generation.');
