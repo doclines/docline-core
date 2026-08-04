@@ -12,7 +12,19 @@
     "contentMode": { "type": "string", "enum": ["standard", "versioned"] },
     "name": { "type": "string" },
     "description": { "type": "string" },
-    "favicon": { "type": "string" },
+    "favicon": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "properties": {
+            "src": { "type": "string" },
+            "light": { "type": "string" },
+            "dark": { "type": "string" }
+          }
+        }
+      ]
+    },
     "branding": {
       "type": "object",
       "required": ["title", "homePath"],
@@ -26,6 +38,8 @@
           "type": "object",
           "properties": {
             "src": { "type": "string" },
+            "light": { "type": "string" },
+            "dark": { "type": "string" },
             "alt": { "type": "string" },
             "variant": { "type": "string", "enum": ["icon", "wordmark"] },
             "showText": { "type": "boolean" }
@@ -263,6 +277,10 @@
       "type": "object",
       "required": ["tabs"],
       "properties": {
+        "titleAcronyms": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
         "tabs": {
           "type": "array",
           "items": {
