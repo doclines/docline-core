@@ -18,6 +18,38 @@ function resolveWithinRoot(root, relativePath) {
   return resolvedPath;
 }
 
+function getRequestPath(req) {
+  try {
+    return decodeURIComponent((req.url || '').split('?')[0]);
+  } catch {
+    return null;
+  }
+}
+
+function rejectBadRequest(res) {
+  res.statusCode = 400;
+  res.end('Bad request');
+}
+
+function isInvalidPath(value) {
+  return !value || value.includes('\0');
+}
+
+function getMimeType(filePath, mimeTypes, fallback = 'application/octet-stream') {
+  const ext = path.extname(filePath).toLowerCase();
+  return mimeTypes[ext] || fallback;
+}
+
+function sendFile(res, filePath, mimeTypes, fallbackType = 'application/octet-stream') {
+  const contentType = getMimeType(filePath, mimeTypes, fallbackType);
+  res.setHeader('Content-Type', contentType);
+  if (contentType.startsWith('image/') || contentType === 'application/pdf') {
+    res.end(fs.readFileSync(filePath));
+    return;
+  }
+  res.end(fs.readFileSync(filePath, 'utf-8'));
+}
+
 // Plugin to serve markdown/mdx content files and static assets
 function serveContent() {
   const mimeTypes = {
@@ -44,19 +76,11 @@ function serveContent() {
     configureServer(server) {
       // Register BEFORE Vite's internal middleware (no return wrapper)
       server.middlewares.use((req, res, next) => {
-        // Serve AIGA Portal static build under /portal/* when available.
+//  build under /portal/* when available.
         if (req.url?.startsWith('/portal')) {
-          let portalPath;
-          try {
-            portalPath = decodeURIComponent(req.url.split('?')[0]);
-          } catch {
-            res.statusCode = 400;
-            res.end('Bad request');
-            return;
-          }
-          if (portalPath.includes('\0')) {
-            res.statusCode = 400;
-            res.end('Bad request');
+          const portalPath = getRequestPath(req);
+          if (isInvalidPath(portalPath)) {
+            rejectBadRequest(res);
             return;
           }
 
@@ -67,39 +91,21 @@ function serveContent() {
           const targetPath = resolveWithinRoot(portalBuildRoot, relPortalPath);
 
           if (targetPath && fs.existsSync(targetPath) && fs.statSync(targetPath).isFile()) {
-            const ext = path.extname(targetPath).toLowerCase();
-            res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream');
-            res.end(fs.readFileSync(targetPath));
-            return;
-          }
-
-          // If the portal root is requested and build exists, serve index fallback.
-          const portalIndexPath = path.join(portalBuildRoot, 'index.html');
-          if ((portalPath === '/portal' || portalPath === '/portal/') && fs.existsSync(portalIndexPath)) {
-            res.setHeader('Content-Type', mimeTypes['.html']);
-            res.end(fs.readFileSync(portalIndexPath, 'utf-8'));
+            sendFile(res, targetPath, mimeTypes);
             return;
           }
         }
 
         // Serve content files (md, mdx, images, etc.)
         if (req.url?.startsWith('/content/')) {
-          let relPath;
-          try {
-            relPath = decodeURIComponent(req.url.replace('/content/', '').split('?')[0]);
-          } catch {
-            res.statusCode = 400;
-            res.end('Bad request');
+          const contentPath = getRequestPath(req);
+          if (isInvalidPath(contentPath)) {
+            rejectBadRequest(res);
             return;
           }
-          if (relPath.includes('\0')) {
-            res.statusCode = 400;
-            res.end('Bad request');
-            return;
-          }
+          const relPath = contentPath.replace('/content/', '');
           const relPathNoDocsPrefix = relPath.startsWith('docs/') ? relPath.slice(5) : relPath;
-          // Try project root first (for introduction.mdx)
-          // Then try docs/ folder (for files referenced without docs/ prefix)
+ 
           const candidates = [
             resolveWithinRoot(projectRoot, relPath),
             resolveWithinRoot(docsRoot, relPath),
@@ -107,27 +113,17 @@ function serveContent() {
           ].filter(Boolean);
           for (const filePath of candidates) {
             if (fs.existsSync(filePath)) {
-              const ext = path.extname(filePath).toLowerCase();
-              const contentType = mimeTypes[ext] || 'application/octet-stream';
-              res.setHeader('Content-Type', contentType);
-              if (contentType.startsWith('image/') || contentType === 'application/pdf') {
-                res.end(fs.readFileSync(filePath));
-              } else {
-                res.end(fs.readFileSync(filePath, 'utf-8'));
-              }
+              sendFile(res, filePath, mimeTypes);
               return;
             }
           }
-          // Fallback for images: search docs/assets/ by filename.
-          // This handles docs where relative image paths have an incorrect depth.
+
           const ext = path.extname(relPath).toLowerCase();
           if (ext && mimeTypes[ext]?.startsWith('image/')) {
             const filename = path.basename(relPath);
             const assetsFallback = path.join(docsRoot, 'assets', filename);
             if (fs.existsSync(assetsFallback)) {
-              const contentType = mimeTypes[ext];
-              res.setHeader('Content-Type', contentType);
-              res.end(fs.readFileSync(assetsFallback));
+              sendFile(res, assetsFallback, mimeTypes);
               return;
             }
           }
@@ -139,17 +135,9 @@ function serveContent() {
         
         // Serve images directly from docs directory
         if (req.url?.match(/\.(png|jpg|jpeg|gif|svg|webp|ico)$/i)) {
-          let rawImgPath;
-          try {
-            rawImgPath = decodeURIComponent(req.url.split('?')[0]);
-          } catch {
-            res.statusCode = 400;
-            res.end('Bad request');
-            return;
-          }
-          if (rawImgPath.includes('\0')) {
-            res.statusCode = 400;
-            res.end('Bad request');
+          const rawImgPath = getRequestPath(req);
+          if (isInvalidPath(rawImgPath)) {
+            rejectBadRequest(res);
             return;
           }
           const normalizedImgPath = rawImgPath.startsWith('/docs/')
@@ -157,10 +145,7 @@ function serveContent() {
             : rawImgPath.replace(/^\//, '');
           const imgPath = resolveWithinRoot(docsRoot, normalizedImgPath);
           if (imgPath && fs.existsSync(imgPath)) {
-            const ext = path.extname(imgPath).toLowerCase();
-            const contentType = mimeTypes[ext] || 'image/jpeg';
-            res.setHeader('Content-Type', contentType);
-            res.end(fs.readFileSync(imgPath));
+            sendFile(res, imgPath, mimeTypes, 'image/jpeg');
             return;
           }
         }
@@ -176,8 +161,7 @@ export default defineConfig({
     serveContent(),
     react(),
   ],
-  // VITE_BASE_URL lets GitHub Actions set the correct sub-path for project repos
-  // e.g. /my-repo/  — defaults to / for local dev and custom domains
+
   base: process.env.VITE_BASE_URL ?? '/',
   resolve: {
     alias: {
