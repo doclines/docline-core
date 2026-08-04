@@ -27,6 +27,11 @@ function deepMerge(base, override) {
 function normalizeBranding(config) {
   const branding = config.branding || {};
   const legacyLogo = config.logo || {};
+  const logo = branding.logo || {};
+
+  const logoSrc = logo.src || legacyLogo.light || legacyLogo.dark || '';
+  const logoLight = logo.light || logo.src || legacyLogo.light || legacyLogo.dark || '';
+  const logoDark = logo.dark || logo.src || legacyLogo.dark || legacyLogo.light || logoLight;
 
   return {
     ...branding,
@@ -34,11 +39,40 @@ function normalizeBranding(config) {
     subtitle: branding.subtitle || config.description || 'Developer Documentation',
     homePath: branding.homePath || '/introduction',
     logo: {
-      src: branding.logo?.src || legacyLogo.light || '/opensourcedocs-logo.svg',
-      alt: branding.logo?.alt || branding.title || config.name || 'Documentation',
-      variant: branding.logo?.variant || 'icon',
-      showText: branding.logo?.showText !== false,
+      src: logoSrc,
+      light: logoLight,
+      dark: logoDark,
+      alt: logo.alt || branding.title || config.name || 'Documentation',
+      variant: logo.variant || 'icon',
+      showText: logo.showText !== false,
     },
+  };
+}
+
+function normalizeFavicon(config, normalizedBranding) {
+  const rawFavicon = config?.favicon;
+
+  if (typeof rawFavicon === 'string') {
+    const value = rawFavicon.trim();
+    return {
+      light: value,
+      dark: value,
+    };
+  }
+
+  if (isObject(rawFavicon)) {
+    const src = String(rawFavicon.src || '').trim();
+    const light = String(rawFavicon.light || src || '').trim();
+    const dark = String(rawFavicon.dark || src || light || '').trim();
+    return {
+      light,
+      dark,
+    };
+  }
+
+  return {
+    light: normalizedBranding?.logo?.light || normalizedBranding?.logo?.src || '',
+    dark: normalizedBranding?.logo?.dark || normalizedBranding?.logo?.src || '',
   };
 }
 
@@ -70,10 +104,12 @@ function normalizeContent(config) {
 }
 
 const mergedConfig = deepMerge(defaultDocsConfig, rootDocsConfig);
+const normalizedBranding = normalizeBranding(mergedConfig);
 
 const docsConfig = {
   ...mergedConfig,
-  branding: normalizeBranding(mergedConfig),
+  branding: normalizedBranding,
+  favicon: normalizeFavicon(mergedConfig, normalizedBranding),
   content: normalizeContent(mergedConfig),
 };
 
