@@ -1,0 +1,11 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="docline dark logo">
+  <defs>
+    <linearGradient id="doclineDarkGradient" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="108" height="108" rx="28" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <path d="M34 78c15-18 31-24 57-26-2 24-10 40-28 58-17-2-28-13-29-32z" fill="url(#doclineDarkGradient)"/>
+  <path d="M48 82c10-13 20-20 37-23" stroke="#99f6e4" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round"/>
+</svg>
