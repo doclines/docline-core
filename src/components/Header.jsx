@@ -24,7 +24,7 @@ function resolveAssetPath(assetPath) {
 const docsName = docsConfig?.branding?.title || docsConfig?.name || 'Documentation';
 const docsSubtitle = docsConfig?.branding?.subtitle || 'Developer Documentation';
 const homePath = docsConfig?.branding?.homePath || '/introduction';
-const logoSrc = resolveAssetPath(docsConfig?.branding?.logo?.src || '/opensourcedocs-logo.svg');
+const configuredLogo = docsConfig?.branding?.logo || {};
 const logoAlt = docsConfig?.branding?.logo?.alt || docsName;
 const logoVariant = docsConfig?.branding?.logo?.variant || 'icon';
 const showBrandText = docsConfig?.branding?.logo?.showText !== false;
@@ -39,6 +39,27 @@ const DEFAULT_HEADER_ACTIONS = {
   order: ['search', 'theme', 'template', 'view', 'themeGallery', 'quickSearch'],
   hidden: [],
 };
+
+function getPreferredThemeMode() {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  return 'light';
+}
+
+function getDocumentThemeMode() {
+  if (typeof document === 'undefined') return getPreferredThemeMode();
+  const mode = document.documentElement?.dataset?.docThemeMode;
+  if (mode === 'dark' || mode === 'light') return mode;
+  return getPreferredThemeMode();
+}
+
+function resolveLogoAsset(mode) {
+  if (mode === 'dark') {
+    return configuredLogo.dark || configuredLogo.src || configuredLogo.light || '';
+  }
+  return configuredLogo.light || configuredLogo.src || configuredLogo.dark || '';
+}
 
 export default function Header({
   tabs,
@@ -68,6 +89,8 @@ export default function Header({
   headerActions = DEFAULT_HEADER_ACTIONS,
 }) {
   const location = useLocation();
+  const [themeMode, setThemeMode] = React.useState(getDocumentThemeMode);
+  const logoSrc = resolveAssetPath(resolveLogoAsset(themeMode));
   const actions = Array.isArray(headerActions.order) ? headerActions.order : DEFAULT_HEADER_ACTIONS.order;
   const hiddenActions = new Set(Array.isArray(headerActions.hidden) ? headerActions.hidden : []);
   const visibleActions = actions.filter((action) => !hiddenActions.has(action));
@@ -78,6 +101,28 @@ export default function Header({
   const showVersionSelect = Array.isArray(versionOptions) && versionOptions.length > 1;
   const showLocaleSelect = Array.isArray(localeOptions) && localeOptions.length > 1;
   const showContextSwitchers = showVersionSelect || showLocaleSelect;
+
+  React.useEffect(() => {
+    if (typeof document === 'undefined') return undefined;
+
+    const root = document.documentElement;
+    const syncThemeMode = () => setThemeMode(getDocumentThemeMode());
+    const observer = new MutationObserver(syncThemeMode);
+    observer.observe(root, { attributes: true, attributeFilter: ['data-doc-theme-mode'] });
+
+    if (typeof window !== 'undefined' && window.matchMedia) {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      mediaQuery.addEventListener('change', syncThemeMode);
+      return () => {
+        observer.disconnect();
+        mediaQuery.removeEventListener('change', syncThemeMode);
+      };
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   function renderHeaderAction(action, { grouped = false } = {}) {
     if (hiddenActions.has(action)) return null;
@@ -242,13 +287,15 @@ export default function Header({
           className="group flex items-center gap-2.5 rounded-xl border border-transparent px-2 py-1 transition-colors hover:border-[var(--theme-border)]/80 hover:bg-[var(--theme-bg-soft)]/75"
           onClick={() => onTabChange(tabs[0]?.id || activeTab)}
         >
-          <img
-            src={logoSrc}
-            alt={logoAlt}
-            className={logoVariant === 'wordmark'
-              ? 'h-9 w-auto max-w-[210px]'
-              : 'h-8 w-8 rounded-lg ring-1 ring-[var(--theme-border)]'}
-          />
+          {logoSrc && (
+            <img
+              src={logoSrc}
+              alt={logoAlt}
+              className={logoVariant === 'wordmark'
+                ? 'h-9 w-auto max-w-[210px]'
+                : 'h-8 w-8 rounded-lg ring-1 ring-[var(--theme-border)]'}
+            />
+          )}
           {showBrandText && (
             <div className="hidden sm:block">
               <p className="text-sm font-semibold tracking-tight">{docsName}</p>
