@@ -4,7 +4,10 @@ const defaultDocsConfig = {
   contentMode: 'versioned',
   name: 'Product Docs',
   description: 'Custom Tailwind-powered documentation template',
-  favicon: '/favicon.png',
+  favicon: {
+    light: '/logos/light.svg',
+    dark: '/logos/dark.svg',
+  },
   branding: {
     title: 'Product Docs',
     subtitle: 'Developer Documentation',
@@ -12,7 +15,8 @@ const defaultDocsConfig = {
     badgeStyle: 'minimal',
     homePath: '/introduction',
     logo: {
-      src: '/opensourcedocs-logo.svg',
+      light: '/logos/light.svg',
+      dark: '/logos/dark.svg',
       alt: 'Product Docs',
       variant: 'icon',
       showText: true,
