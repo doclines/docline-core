@@ -26,14 +26,39 @@ function resolveAssetPath(assetPath) {
   return withBase(assetPath);
 }
 
+function getPreferredThemeMode() {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  return 'light';
+}
+
+function getDocumentThemeMode() {
+  const mode = document.documentElement?.dataset?.docThemeMode;
+  if (mode === 'dark' || mode === 'light') return mode;
+  return getPreferredThemeMode();
+}
+
+function resolveThemeAsset(configuredAsset, mode) {
+  if (typeof configuredAsset === 'string') {
+    return configuredAsset;
+  }
+
+  if (configuredAsset && typeof configuredAsset === 'object' && !Array.isArray(configuredAsset)) {
+    const src = configuredAsset.src || '';
+    if (mode === 'dark') {
+      return configuredAsset.dark || src || configuredAsset.light || '';
+    }
+    return configuredAsset.light || src || configuredAsset.dark || '';
+  }
+
+  return '';
+}
+
 function applyDocumentBranding() {
   const title = docsConfig?.branding?.title || docsConfig?.name || 'Documentation';
-  const configuredFavicon = docsConfig?.favicon || docsConfig?.branding?.logo?.src || '/logo.svg';
 
   document.title = title;
-
-  const faviconHref = resolveAssetPath(configuredFavicon);
-  if (!faviconHref) return;
 
   let faviconEl = document.querySelector('link[rel="icon"]');
   if (!faviconEl) {
@@ -42,19 +67,36 @@ function applyDocumentBranding() {
     document.head.appendChild(faviconEl);
   }
 
-  const ext = (configuredFavicon.split('.').pop() || '').toLowerCase();
-  const mimeType = ext === 'png'
-    ? 'image/png'
-    : ext === 'ico'
-      ? 'image/x-icon'
-      : ext === 'svg'
-        ? 'image/svg+xml'
-        : undefined;
+  const setFavicon = () => {
+    const configuredFavicon = resolveThemeAsset(docsConfig?.favicon, getDocumentThemeMode());
+    const faviconHref = resolveAssetPath(configuredFavicon);
+    if (!faviconHref) return;
 
-  if (mimeType) {
-    faviconEl.setAttribute('type', mimeType);
+    const ext = (configuredFavicon.split('.').pop() || '').toLowerCase();
+    const mimeType = ext === 'png'
+      ? 'image/png'
+      : ext === 'ico'
+        ? 'image/x-icon'
+        : ext === 'svg'
+          ? 'image/svg+xml'
+          : undefined;
+
+    if (mimeType) {
+      faviconEl.setAttribute('type', mimeType);
+    }
+    faviconEl.setAttribute('href', faviconHref);
+  };
+
+  setFavicon();
+
+  const root = document.documentElement;
+  const observer = new MutationObserver(() => setFavicon());
+  observer.observe(root, { attributes: true, attributeFilter: ['data-doc-theme-mode'] });
+
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    mediaQuery.addEventListener('change', setFavicon);
   }
-  faviconEl.setAttribute('href', faviconHref);
 }
 
 function applyInitialVisualPreferences() {
@@ -76,8 +118,8 @@ function applyInitialVisualPreferences() {
   root.dataset.performanceMode = initialPerformanceMode ? 'on' : 'off';
 }
 
-applyDocumentBranding();
 applyInitialVisualPreferences();
+applyDocumentBranding();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
