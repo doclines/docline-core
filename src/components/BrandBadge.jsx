@@ -59,7 +59,12 @@ export default function BrandBadge({ dockEnabled = false, dockPosition = 'right'
   const attributionMode = String(docsConfig?.branding?.attribution || 'keep').toLowerCase() === 'remove'
     ? 'remove'
     : 'keep';
-  const logoSrc = resolveAssetPath('/opensourcedocs-logo.svg');
+  const inlineLogoPath = docsConfig?.branding?.badge?.logoSrc
+    || docsConfig?.branding?.logo?.light
+    || docsConfig?.branding?.logo?.src
+    || docsConfig?.branding?.logo?.dark
+    || '';
+  const logoSrc = resolveAssetPath(inlineLogoPath);
   const logoAlt = badge.label;
   const badgeStyle = String(docsConfig?.branding?.badgeStyle || 'minimal').toLowerCase() === 'full'
     ? 'full'
